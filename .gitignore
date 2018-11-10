@@ -1,0 +1,18 @@
+# Local temp files for Vim or Mac OS X.
+*.swp
+.DS_Store
+
+# Python compiled binaries.
+__pycache__/
+
+# Python virtual environment.
+venv
+
+# Local CSVs and their lock files (if they are open in an editor).
+pyprojecttemplate/var/*.csv
+pyprojecttemplate/var/.~lock.*.csv#
+## NOTE
+## If you want to ignore project-wide, you can use the filename pattern
+## without the directory. However, this means that the local files are
+## easier to misplace in incorrect directories, since they do not show
+## up in the `git status` output.
