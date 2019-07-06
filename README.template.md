@@ -13,7 +13,11 @@ Screenshot or command-line snippet.
 
 Instructions.
 
+If this is long, keep it short here and rather link to [Installation](/docs/installation.md) doc.
+
 
 ## Usage
 
 Instructions.
+
+If this is long, keep it short here and rather link to [Usage](/docs/usage.md) doc.
