@@ -1,3 +1,5 @@
 {
     "code-runner.cwd": "pyprojecttemplate",
+
+    "editor.rulers": [80],
 }
