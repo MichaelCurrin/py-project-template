@@ -1,5 +1,7 @@
 {
     "code-runner.cwd": "pyprojecttemplate",
 
+    "python.pythonPath": "venv/bin/python",
+
     "editor.rulers": [80],
 }
