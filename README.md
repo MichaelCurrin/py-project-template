@@ -5,6 +5,38 @@ The style is based on conventions in the Python community, what I have picked up
 
 This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
 
+
+## Explanations and notes
+
+### VSCode Settings
+
+See the [.vscode](/.vscode) directory.
+
+#### Settings
+
+The `python.pythonPath` value for User defaults to `"python"`.
+
+If you use a virtual environment, use the venv path in the settings file. This must be the full path - it will not pickup correctly inside the venv if left as `"python"`.
+
+If you don't use a virtual environment, the User default could be fine. You could override it in the User or Workspace level to one of the following:
+
+- `python3`
+- `/usr/bin/python3`
+- `/usr/bin/python3.X` - e.g. `3.6`. If you use the VSCode GUI to select the environment it might look like this.
+
+#### DOTENV
+
+Note that the [.env][/.env] is picked up by VSCode because of this in the default user settings file:
+
+```
+"python.envFile": "${workspaceFolder}/.env"
+```
+
+#### Launch
+
+The VSCode [launch](/.vscode/launch.json) file contains an item to launch a selected Python script in the terminal. This configuration should be left as is, as it is flexible. If you find yourself running particular Python scripts or modules, then add items for them with their specific name, then you can run them without first selecting them.
+
+
 ## Naming conventions
 
 This section explains the naming of directories this project
