@@ -1,7 +1,3 @@
-# Local temp files for Vim or Mac OS X.
-*.swp
-.DS_Store
-
 # Python compiled binaries.
 __pycache__/
 
