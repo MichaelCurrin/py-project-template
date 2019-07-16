@@ -1,4 +1,5 @@
 {
+    "terminal.integrated.cwd": "pyprojecttemplate",
     "code-runner.cwd": "pyprojecttemplate",
 
     "python.pythonPath": "venv/bin/python",
