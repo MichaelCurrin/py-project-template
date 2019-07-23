@@ -69,3 +69,29 @@ Benefits I found of this approach:
     * Imports are easy to think about and trace. You can see the role of a script based on what module it is in.
     * Scripts are more independent and therefore more robust.
     * It's easier to avoid circular imports and complicated imports (e.g. where a script uses a script uses script in a deep or haphazard structure).
+
+
+## Git Ignore
+
+Optional additions for [.gitignore](.gitignore).
+
+
+### Data files
+
+Ignore files of a certain type project-wide. e.g. `.csv`, `.json`. 
+
+```
+# Local CSVs and their lock files (if they are open in an editor).
+*.csv
+*.~lock.*.csv#
+```
+
+Do this project-wide at the risk that you will have unversioned CSVs left all over your project which do not show up using `git status`. Also, in some cases you may want to version as CSV or JSON file and you will have to use `git add -f FILE` to add it.
+
+Or ignore CSV files in specific paths such as project variable files directory. The rule could be:
+
+```
+# Local CSVs and their lock files (if they are open in an editor).
+pyprojecttemplate/var/*.csv
+pyprojecttemplate/var/.~lock.*.csv#
+```
