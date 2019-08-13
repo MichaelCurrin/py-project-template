@@ -6,7 +6,7 @@ Purpose or usecase of the project.
 
 ## Example Usage
 
-Screenshot or command-line snippet.
+_TODO: Screenshot or command-line snippet._
 
 
 ## Installation
