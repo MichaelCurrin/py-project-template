@@ -5,26 +5,36 @@ The style is based on conventions in the Python community, what I have picked up
 
 This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
 
-## Drop this file
+## Use this project
 
-After duplicating this project template for your own template, you replace this README file with a template README file.
+### Clone
+
+Click the _Use as template_ button on this repo on Github.
+
+Create a local clone of your repo.
+
+
+### Replace the README.md
+
 
 ```bash
+$ giv rm README.md
 $ giv mv README.template.md README.md
 ```
 
 Then customize the README.md as you like.
 
 
-## Use this project
-
 ### Complete project name references
 
-Rename the Python project directory to your custom name. 
+Rename the Python project directory and script to your custom name. For example: `myprojectname`. 
 
 ```bash
 $ cd <PATH_TO_REPO>
 $ git mv pyprojectemplate myprojectname
+$ cd myprojectname
+$ git rm pyprojectemplate.py
+$ touch myprojectname.py
 ```
 
 Go through the _TODO_ items in the repo and complete them. See the rest is README if you don't know what a file is for.
@@ -32,6 +42,8 @@ Go through the _TODO_ items in the repo and complete them. See the rest is READM
 _FIXME: Is there is a way to use grep etc. to replace mentions across all files?_
 
 ### Cleanup
+
+If you don't need directories in project directory, delete them. They contain `.gitkeep` files - once deleted those changes must be added to version control.
 
 Delete [LICENSE](./LICENSE) and replace with your own.
 
