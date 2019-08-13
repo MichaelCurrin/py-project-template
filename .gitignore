@@ -4,5 +4,4 @@ __pycache__/
 # Python virtual environment.
 venv
 
-# TODO: Replace directory with your own project name.
-pyprojecttemplate/var/*
+# TODO: See README.md for instructions on filling this section.
