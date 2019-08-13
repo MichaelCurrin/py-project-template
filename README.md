@@ -14,12 +14,12 @@ Click the _Use as template_ button on this repo on Github.
 Create a local clone of your repo.
 
 
-### Replace the README.md
+### Replace this README.md
 
+Note the force flag to overwrite.
 
 ```bash
-$ giv rm README.md
-$ giv mv README.template.md README.md
+$ giv mv -f README.template.md README.md
 ```
 
 Then customize the README.md as you like.
