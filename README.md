@@ -1,5 +1,5 @@
 # Py Project Template
-> Python 3 project scaffolding - covers directory structure, scripts and docs
+> Python 3 project scaffolding - covers directory structure, scripts and docs.
 
 The style is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
 
