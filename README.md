@@ -18,6 +18,8 @@ Then customize the README.md as you like.
 
 ## Use this project
 
+### Complete project name references
+
 Rename the Python project directory to your custom name. 
 
 ```bash
@@ -27,7 +29,12 @@ $ git mv pyprojectemplate myprojectname
 
 Go through the _TODO_ items in the repo and complete them. See the rest is README if you don't know what a file is for.
 
-FIXME: Is there is a way to use grep etc. to replace mentions across all files?
+_FIXME: Is there is a way to use grep etc. to replace mentions across all files?_
+
+### Cleanup
+
+Delete [LICENSE](./LICENSE) and replace with your own.
+
 
 ## Explanations and notes
 
