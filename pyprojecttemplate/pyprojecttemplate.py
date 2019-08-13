@@ -19,6 +19,7 @@ import sys
 
 SOME_GLOBAL = "My global"
 
+
 ### Functions ###
 
 def main(args):
