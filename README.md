@@ -17,7 +17,9 @@ $ mv README.template.md README.md
 
 ### VSCode Settings
 
-See the [.vscode](/.vscode) directory.
+See the [.vscode](/.vscode) directory, or delete if you don't use [Visual Studio Code](https://code.visualstudio.com/).
+
+Complete the TODO items in [settings.json](/.vscode/settings.json).
 
 #### Settings
 
