@@ -33,18 +33,25 @@ If you don't use a virtual environment, the User default could be fine. You coul
 - `/usr/bin/python3`
 - `/usr/bin/python3.X` - e.g. `3.6`. If you use the VSCode GUI to select the environment it might look like this.
 
+#### Launch
+
+The [launch.json](/.vscode/launch.json) file contains configurations for scripts or commands which can be run from the Debug panel, using the droplist and play button. 
+
+This configuration can be left as is or you can add to it.
+
+The config already contains an item to run a Python script in the terminal, if it open and in view in the IDE.
+
+If you find yourself regularly running particular Python scripts or modules and want to do so without having to first open the script, then add an item for that specific script. 
+
 #### DOTENV
 
-Note that the [.env][/.env] is picked up by VSCode because of this in the default user settings file:
+This template comes with a _dotenv_ file - [.env](/.env) which includes paths to import from, including the project directory and the virtual environment. Having that there helps with running or linting files in an IDE such as VSCode. 
+
+For interest, the file works in VSCode because of this global config setting:
 
 ```
 "python.envFile": "${workspaceFolder}/.env"
 ```
-
-#### Launch
-
-The VSCode [launch](/.vscode/launch.json) file contains an item to launch a selected Python script in the terminal. This configuration should be left as is, as it is flexible. If you find yourself running particular Python scripts or modules, then add items for them with their specific name, then you can run them without first selecting them.
-
 
 ## Naming conventions
 
