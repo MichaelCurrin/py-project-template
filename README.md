@@ -7,11 +7,27 @@ This repo is a good starting point for new projects plus I can use it as a refer
 
 ## Drop this file
 
-After duplicating this project template for your own template, replace this README with the template and edit that.
+After duplicating this project template for your own template, you replace this README file with a template README file.
 
 ```bash
-$ mv README.template.md README.md
+$ giv mv README.template.md README.md
 ```
+
+Then customize the README.md as you like.
+
+
+## Use this project
+
+Rename the Python project directory to your custom name. 
+
+```bash
+$ cd <PATH_TO_REPO>
+$ git mv pyprojectemplate myprojectname
+```
+
+Go through the _TODO_ items in the repo and complete them. See the rest is README if you don't know what a file is for.
+
+FIXME: Is there is a way to use grep etc. to replace mentions across all files?
 
 ## Explanations and notes
 
