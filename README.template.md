@@ -11,13 +11,13 @@ _TODO: Screenshot or command-line snippet._
 
 ## Installation
 
-Instructions.
+_TODO: Put your installation instructions here.
 
-If this is long, keep it short here and rather link to [Installation](/docs/installation.md) doc.
+_If this section is long, then move the content to the [Installation](/docs/installation.md) doc and link to it here. Otherwise, delete that placeholder doc._
 
 
 ## Usage
 
-Instructions.
+_TODO: Put your usage instructions here._
 
-If this is long, keep it short here and rather link to [Usage](/docs/usage.md) doc.
+_If this section is long, then move the content to the [Usage](/docs/usage.md) doc and link to it here. Otherwise, delete that placeholder doc._
