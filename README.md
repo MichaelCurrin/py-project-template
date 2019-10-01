@@ -5,6 +5,20 @@ The style is based on conventions in the Python community, what I have picked up
 
 This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
 
+- [Use this project](#use-this-project)
+    - [Clone](#clone)
+    - [Replace this README](#replace-this-readme)
+    - [Complete project name references](#complete-project-name-references)
+    - [Cleanup](#cleanup)
+- [Explanations and notes](#explanations-and-notes)
+    - [VSCode Settings](#vscode-settings)
+        - [Settings](#settings)
+        - [Launch](#launch)
+        - [DOTENV](#dotenv)
+- [Naming conventions](#naming-conventions)
+- [Git Ignore](#git-ignore)
+    - [Data files](#data-files)
+
 ## Use this project
 
 ### Clone
