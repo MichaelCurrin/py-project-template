@@ -14,7 +14,7 @@ Click the _Use as template_ button on this repo on Github.
 Create a local clone of your repo.
 
 
-### Replace this README.md
+### Replace this README
 
 Note the force flag to overwrite.
 
@@ -22,12 +22,12 @@ Note the force flag to overwrite.
 $ giv mv -f README.template.md README.md
 ```
 
-Then customize the README.md as you like.
+Then customize the `README.md` as you like.
 
 
 ### Complete project name references
 
-Rename the Python project directory and script to your custom name. For example: `myprojectname`. 
+Rename the Python project directory and script to your custom name. For example: `myprojectname`.
 
 ```bash
 $ cd <PATH_TO_REPO>
@@ -70,17 +70,17 @@ If you don't use a virtual environment, the User default could be fine. You coul
 
 #### Launch
 
-The [launch.json](/.vscode/launch.json) file contains configurations for scripts or commands which can be run from the Debug panel, using the droplist and play button. 
+The [launch.json](/.vscode/launch.json) file contains configurations for scripts or commands which can be run from the Debug panel, using the droplist and play button.
 
 This configuration can be left as is or you can add to it.
 
 The config already contains an item to run a Python script in the terminal, if it open and in view in the IDE.
 
-If you find yourself regularly running particular Python scripts or modules and want to do so without having to first open the script, then add an item for that specific script. 
+If you find yourself regularly running particular Python scripts or modules and want to do so without having to first open the script, then add an item for that specific script.
 
 #### DOTENV
 
-This template comes with a _dotenv_ file - [.env](/.env) which includes paths to import from, including the project directory and the virtual environment. Having that there helps with running or linting files in an IDE such as VSCode. 
+This template comes with a _dotenv_ file - [.env](/.env) which includes paths to import from, including the project directory and the virtual environment. Having that there helps with running or linting files in an IDE such as VSCode.
 
 For interest, the file works in VSCode because of this global config setting:
 
