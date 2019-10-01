@@ -1,6 +1,8 @@
 # Py Project Template
 > Python 3 project scaffolding - covers directory structure, scripts and docs.
 
+[![Use this template license](https://img.shields.io/badge/Use_this_template-light_green.svg)](https://github.com/MichaelCurrin/py-project-template/generate) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/py-project-template/LICENSE)
+
 The style is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
 
 This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
@@ -21,14 +23,16 @@ This repo is a good starting point for new projects plus I can use it as a refer
 
 ## Use this project
 
-### Clone
+How to start with this a copy of this template and customize it.
 
-Click the _Use as template_ button on this repo on Github.
+### Get a local copy of the base project
 
-Create a local clone of your repo.
+1. Click [Use this template](https://github.com/MichaelCurrin/py-project-template/generate) to create a new project started from this repo.
+2. Create a local clone of your repo.
+3. Navigate to your repo directory.
 
 
-### Replace this README
+### Replace the README
 
 Note the force flag to overwrite.
 
@@ -92,7 +96,7 @@ The config already contains an item to run a Python script in the terminal, if i
 
 If you find yourself regularly running particular Python scripts or modules and want to do so without having to first open the script, then add an item for that specific script.
 
-#### DOTENV
+#### Dotenv
 
 This template comes with a _dotenv_ file - [.env](/.env) which includes paths to import from, including the project directory and the virtual environment. Having that there helps with running or linting files in an IDE such as VSCode.
 
@@ -160,3 +164,18 @@ Or ignore CSV files in specific paths such as project variable files directory. 
 pyprojecttemplate/var/*.csv
 pyprojecttemplate/var/.~lock.*.csv#
 ```
+
+## Credits
+
+Github badges sourced from [Naereen/badges](https://github.com/Naereen/badges).
+
+While there is a generic format of badge metadata for the given flags, arbitrary values work too.
+
+SVG name rules
+- Format: `<SUBJECT>-<STATUS>-<COLOR>.svg`
+- Subject is used for status section (text in grey area) and color. Status is used for status section (text in colored button area). Omit subject to only status button.
+- Use hyphens separating values as above, and an underscore or `%20` _within_ values to separate words.
+
+For example, `Coolness-Very_Awesome-Purple.svg`, which displays as: [![Generic badge](https://img.shields.io/badge/Coolness%20Factor-Very_Awesome-Purple.svg)](https://shields.io/)
+
+Colors can be more specific hex values e.g. `1f425f`.
