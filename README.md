@@ -110,7 +110,7 @@ Recommendations for using the project's directories (paths given relative to rep
 - **[/pyprojecttemplate/lib/](/pyprojecttemplate/lib/)** - Library of common scripts. These should be independent of each other (i.e. do not import from each other), to reduce circular dependencies. They should also not depend on an `__init__.py` script. Any common logic such as setting up a path to the app directory should be setup in the `__init__.py` script.
 - **[/pyprojecttemplate/etc/](/pyprojecttemplate/etc/)** - Configuration files. For files such as `.json`, `.yml`, `.ini` or `.conf`.
 - **[/pyprojecttemplate/utils/](/pyprojecttemplate/utils/)** - Utilities. Standalone scripts which may use the `lib` module. These `utils` scripts should also be independent from each other should. If you find when developing that there is any logic duplicated across `utils` scripts, then that should be moved to a `lib` script and imported from `lib` into `utils` scripts.
-- **[/pyprojecttemplate/var/](pyprojecttemplate/var/)** - Variable content such as a database file or text/CSV/JSON files to be used for input or which are outputted by a script. No scripts should live in the this directory.
+- **[/pyprojecttemplate/var/](/pyprojecttemplate/var/)** - Variable content such as a database file or text/CSV/JSON files to be used for input or which are outputted by a script. No scripts should live in the this directory.
 
 Benefits I found of this approach:
 
@@ -124,7 +124,7 @@ Benefits I found of this approach:
 
 ## Git Ignore
 
-Optional additions for [.gitignore](.gitignore).
+Optional additions for [.gitignore](/.gitignore).
 
 
 ### Data files
