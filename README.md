@@ -1,7 +1,7 @@
 # Py Project Template
 > Python 3 project scaffolding - covers directory structure, scripts and docs.
 
-[![Use this template license](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/py-project-template/generate) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/py-project-template/LICENSE)
+[![Use this template license](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/py-project-template/generate) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/) [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/py-project-template/blob/master/LICENSE)
 
 The style is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
 
