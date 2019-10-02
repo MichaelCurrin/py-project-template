@@ -165,17 +165,20 @@ pyprojecttemplate/var/*.csv
 pyprojecttemplate/var/.~lock.*.csv#
 ```
 
-## Credits
+## Repo Badges
 
-Github badges sourced from [Naereen/badges](https://github.com/Naereen/badges).
+The badges for this project are source from [Naereen/badges](https://github.com/Naereen/badges) on Github.
 
-While there is a generic format of badge metadata for the given flags, arbitrary values work too.
+Some of the badges have dynamic logic, for example they show the latest release number or whether a website is online or not. Others are hardcoded, but very flexible. You can use the samples in that resource above or create your own using this
 
-SVG name rules
-- Format: `<SUBJECT>-<STATUS>-<COLOR>.svg`
-- Subject is used for status section (text in grey area) and color. Status is used for status section (text in colored button area). Omit subject to only status button.
+Rules for static badges:
+
+- URL for badge: `https://img.shields.io/badge/FILENAME`
+- Format of filename to append to URL: `<SUBJECT>-<STATUS>-<COLOR>.svg`
+- The subject is used for status section (text in grey area) and color. Status is used for status section (text in colored button area). Omit subject to only status button.
 - Use hyphens separating values as above, and an underscore or `%20` _within_ values to separate words.
 
-For example, `Coolness-Very_Awesome-Purple.svg`, which displays as: [![Generic badge](https://img.shields.io/badge/Coolness%20Factor-Very_Awesome-Purple.svg)](https://shields.io/)
+For example, `Coolness-Very_Awesome-Purple.svg`, which displays as:
+[![Generic badge](https://img.shields.io/badge/Coolness%20Factor-Very_Awesome-Purple.svg)](https://shields.io/)
 
 Colors can be more specific hex values e.g. `1f425f`.
