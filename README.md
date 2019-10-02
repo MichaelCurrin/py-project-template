@@ -165,20 +165,28 @@ pyprojecttemplate/var/*.csv
 pyprojecttemplate/var/.~lock.*.csv#
 ```
 
-## Repo Badges
+## Badges
 
-The badges for this project are source from [Naereen/badges](https://github.com/Naereen/badges) on Github.
+The badges for this project's docs are sourced from [Naereen/badges](https://github.com/Naereen/badges) on Github.
 
-Some of the badges have dynamic logic, for example they show the latest release number or whether a website is online or not. Others are hardcoded, but very flexible. You can use the samples in that resource above or create your own using this
+Some of the badges have dynamic logic, for example they show the latest release number or whether a website is online or not. Others are hardcoded, but very flexible. You can use the samples in that resource above or create your own using this.
 
-Rules for static badges:
+### Rules for static text badges
 
 - URL for badge: `https://img.shields.io/badge/FILENAME`
-- Format of filename to append to URL: `<SUBJECT>-<STATUS>-<COLOR>.svg`
-- The subject is used for status section (text in grey area) and color. Status is used for status section (text in colored button area). Omit subject to only status button.
+- Format of filename to append to URL: `<SUBJECT>-<STATUS>-<COLOR>.svg`.
+- The subject is used for status section (text in grey area) and color. 
+- Status is used for status section (text in colored button area). Omit subject to only status button.
+- Colors are ANSI colors. e.g. `blue`, `green`, `cyan`. They be more specific as hex values e.g. `0000ff`, `1f425f`.
 - Use hyphens separating values as above, and an underscore or `%20` _within_ values to separate words.
 
 For example, `Coolness-Very_Awesome-Purple.svg`, which displays as:
+
 [![Generic badge](https://img.shields.io/badge/Coolness%20Factor-Very_Awesome-Purple.svg)](https://shields.io/)
 
-Colors can be more specific hex values e.g. `1f425f`.
+### Placement
+
+To show badges side by side, separate them with spaces.
+
+To lay them out them vertically, put them one line under each other. No blank line is needed. Note that normally markdown normally needs an empty line between sentences to create a line break, but that does not apply here. Except placing the badge on a newline directly below a sentence will still output as all one line.
+
