@@ -8,18 +8,22 @@ The style is based on conventions in the Python community, what I have picked up
 This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
 
 - [Use this project](#use-this-project)
-    - [Clone](#clone)
-    - [Replace this README](#replace-this-readme)
+    - [Get a local copy of the base project](#get-a-local-copy-of-the-base-project)
+    - [Replace the README](#replace-the-readme)
     - [Complete project name references](#complete-project-name-references)
     - [Cleanup](#cleanup)
 - [Explanations and notes](#explanations-and-notes)
     - [VSCode Settings](#vscode-settings)
         - [Settings](#settings)
         - [Launch](#launch)
-        - [DOTENV](#dotenv)
+        - [Dotenv](#dotenv)
 - [Naming conventions](#naming-conventions)
 - [Git Ignore](#git-ignore)
     - [Data files](#data-files)
+- [Badges](#badges)
+    - [Rules for static text badges](#rules-for-static-text-badges)
+    - [Examples](#examples)
+    - [Placement](#placement)
 
 ## Use this project
 
@@ -179,7 +183,7 @@ Continue below to see my own recommendations based on limited experimentation.
 
 - URL for badge image: `https://img.shields.io/badge/FILENAME`
 - Format of filename to append to URL: `<SUBJECT>-<STATUS>-<COLOR>.svg`.
-- The subject is used for status section (text in grey area). 
+- The subject is used for status section (text in grey area).
 - Status is used for status section (text in colored button area). Omit subject to only status button.
 - Color defaults to green. Set a color using ANSI colors. e.g. `blue`, `green`, `cyan`. They can be more specific as hex values e.g. `0000ff`, `1f425f`.
 - Use hyphens separating values as above, and an underscore or `%20` _within_ values to separate words.
@@ -213,4 +217,3 @@ General format for a clickable badge with static text.
 To show badges side by side, separate them with spaces.
 
 To lay them out them vertically, put them one line under each other. No blank line is needed. Note that normally markdown normally needs an empty line between sentences to create a line break, but that does not apply here. Except placing the badge on a newline directly below a sentence will still output as all one line.
-
