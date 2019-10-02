@@ -167,7 +167,7 @@ pyprojecttemplate/var/.~lock.*.csv#
 
 ## Badges
 
-The badges for this project's docs are sourced from [Naereen/badges](https://github.com/Naereen/badges) on Github.
+The badges for this project's docs are sourced from [naereen.github.io/badges/](https://naereen.github.io/badges/).
 
 Some of the badges have dynamic logic, for example they show the latest release number or whether a website is online or not. Others are hardcoded, but very flexible. You can use the samples in that resource above or create your own using this.
 
