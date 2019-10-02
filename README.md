@@ -171,6 +171,10 @@ The badges for this project's docs are sourced from [naereen.github.io/badges/](
 
 Some of the badges have dynamic logic, for example they show the latest release number or whether a website is online or not. Others are hardcoded, but very flexible. You can use the samples in that resource above or create your own using this.
 
+See the official [shields](https://shields.io/) site which includes instructions and a tool to make custom widgets.
+
+Continue below to see my own recommendations based on limited experimentation.
+
 ### Rules for static text badges
 
 - URL for badge image: `https://img.shields.io/badge/FILENAME`
@@ -203,7 +207,6 @@ General format for a clickable badge with static text.
 ```
 [![Alt text description](https://img.shields.io/badge/<FILENAME>)](https://<OUT_BOUND_LINK>)
 ```
-
 
 ### Placement
 
