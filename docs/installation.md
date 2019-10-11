@@ -13,7 +13,7 @@ _TODO: Update for appropriate minimum Python version and any other packages cove
 
 _TODO: Include any instructions or commands to install a package or application, other than Python. Example below._
 
-**Mac OS**
+**macOS**
 
 Install [brew](https://brew.sh/).
 
