@@ -2,6 +2,7 @@
 
 _TODO: Delete any sections not needed._
 
+
 ## Project requirements
 
 _TODO: Update for appropriate minimum Python version and any other packages covered later._
@@ -13,7 +14,7 @@ _TODO: Update for appropriate minimum Python version and any other packages cove
 
 _TODO: Include any instructions or commands to install a package or application, other than Python. Example below._
 
-**macOS**
+### macOS
 
 Install [brew](https://brew.sh/).
 
@@ -23,7 +24,7 @@ Install packages with `brew`.
 $ brew install some-package
 ```
 
-**Ubuntu/Debian**
+### Ubuntu/Debian
 
 Install packages with `apt` if you have it, otherwise `apt-get` can be used instead.
 
