@@ -7,7 +7,10 @@ The style is based on conventions in the Python community, what I have picked up
 
 This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
 
-- [Use this project](#use-this-project)
+To use this project, follow either the [Add VS Code boilerplate](#add-vs-code-boilerplate) or [Use this base project](#use-this-base-project) sections. Keep reading later in the doc if you need more detail.
+
+- [Add VS Code boilerplate](#add-vs-code-boilerplate)
+- [Use this base project](#use-this-base-project)
     - [Get a local copy of the base project](#get-a-local-copy-of-the-base-project)
     - [Replace the README](#replace-the-readme)
     - [Complete project name references](#complete-project-name-references)
@@ -25,7 +28,7 @@ This repo is a good starting point for new projects plus I can use it as a refer
     - [Examples](#examples)
     - [Placement](#placement)
 
-## Use this project
+## Add VS Code boilerplate
 
 How to start with this a copy of this template and customize it.
 
