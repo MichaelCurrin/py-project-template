@@ -28,9 +28,38 @@ To use this project, follow either the [Add VS Code boilerplate](#add-vs-code-bo
     - [Examples](#examples)
     - [Placement](#placement)
 
+
 ## Add VS Code boilerplate
 
-How to start with this a copy of this template and customize it.
+Follow this section to improve code linting and code running in VS Code. This copies files from Github straight to your repo. No cloning needed.
+
+- **settings** - Starts your terminal in the app directory. Ensures that the Python link in your virtual environment is used throughout the IDE - in particular this ensures that linting picks up imports from your virtual environment.
+- **launch** - When you click run button within _Debug_ panel, you run debugger within the virtual environment. Note that if you read/write a file in the script, the path should be relative to the project root directory for the debugger to work, not the app directory, even if the script and text file are both in the app directory. FIXME: See if this can be fixed with a launch config change.
+- **dotenv**: Starts your terminal with Python virtual environment activated (provided you have the VS Code _Python_ extension running).
+
+(Despite these settings, the Run button in the top right of the IDE does not start in a virtual environment unfortunately. That's okay as Debug can also run but is more powerful.)
+
+```bash
+$ cd <PATH_TO_YOUR_PROJECT>
+```
+
+Copy and paste the following. Note that it will overwrite existing files.
+
+```bash
+mkdir -p .vscode
+BASE_URL='https://raw.githubusercontent.com/MichaelCurrin/py-project-template/master'
+curl "$BASE_URL/.vscode/settings.json" > .vscode/settings.json
+curl "$BASE_URL/.vscode/launch.json" > .vscode/launch.json
+curl "$BASE_URL/.env" > .env
+
+```
+
+Edit the files and complete the _TODO_ items.
+
+
+## Use this base project
+
+Follow this section fo instructions on how to copy of this entire repo as a base project and then customize it.
 
 ### Get a local copy of the base project
 
@@ -47,7 +76,7 @@ Note the force flag to overwrite.
 $ giv mv -f README.template.md README.md
 ```
 
-Then customize the `README.md` as you like.
+Then customize the new `README.md` as you like.
 
 
 ### Complete project name references
@@ -58,28 +87,37 @@ Rename the Python project directory and script to your custom name. For example:
 $ cd <PATH_TO_REPO>
 $ git mv pyprojectemplate myprojectname
 $ cd myprojectname
+```
+
+Setup main application file.
+
+```bash
 $ git rm pyprojectemplate.py
-$ touch myprojectname.py
+$ touch myprojectname.py  # Replace with your own projectname.
 ```
 
 Go through the _TODO_ items in the repo and complete them. See the rest is README if you don't know what a file is for.
 
-_FIXME: Is there is a way to use grep etc. to replace mentions across all files?_
+_FIXME: Is there is a way to use find, grep etc. to replace mentions across all files without going detailed? And on directory name. Also note renaming local repo folder._
+
+
 
 ### Cleanup
 
 If you don't need directories in project directory, delete them. They contain `.gitkeep` files - once deleted those changes must be added to version control.
 
-Delete [LICENSE](./LICENSE) and replace with your own.
+Delete [LICENSE](/LICENSE) and replace with your own.
 
 
 ## Explanations and notes
 
 ### VSCode Settings
 
-See the [.vscode](/.vscode) directory, or delete if you don't use [Visual Studio Code](https://code.visualstudio.com/).
+Ignore/delete if you don't use [Visual Studio Code](https://code.visualstudio.com/).
 
-Complete the TODO items in [settings.json](/.vscode/settings.json).
+See the [.vscode](/.vscode) directory.
+
+The _settings_ file helps with running code and adding a gutter at 80 pixels. The _launch_ file can be used with the debug panel to run a Python script which is open in the IDE.
 
 #### Settings
 
