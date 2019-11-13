@@ -43,7 +43,7 @@ Follow this section to improve code linting and code running in VS Code. This co
 $ cd <PATH_TO_YOUR_PROJECT>
 ```
 
-Copy and paste the following. Note that it will overwrite existing files.
+Then run the following in your terminal to copy the scripts from Github in your project. _WARNING: This it will overwrite any existing files._
 
 ```bash
 mkdir -p .vscode
@@ -51,10 +51,9 @@ BASE_URL='https://raw.githubusercontent.com/MichaelCurrin/py-project-template/ma
 curl "$BASE_URL/.vscode/settings.json" > .vscode/settings.json
 curl "$BASE_URL/.vscode/launch.json" > .vscode/launch.json
 curl "$BASE_URL/.env" > .env
-
 ```
 
-Edit the files and complete the _TODO_ items.
+Edit the local files and complete the _TODO_ items in them.
 
 
 ## Use this base project
