@@ -3,7 +3,6 @@
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/py-project-template/generate)
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
-[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue.svg)](https://www.python.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/py-project-template/blob/master/LICENSE)
 
 The style is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
@@ -101,7 +100,6 @@ $ touch myprojectname.py  # Replace with your own projectname.
 Go through the _TODO_ items in the repo and complete them. See the rest is README if you don't know what a file is for.
 
 _FIXME: Is there is a way to use find, grep etc. to replace mentions across all files without going detailed? And on directory name. Also note renaming local repo folder._
-
 
 
 ### Cleanup
