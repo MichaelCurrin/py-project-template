@@ -1,6 +1,13 @@
 # Project Name
 > Description of project
 
+_TODO: In the badges, replace MichaelCurrin/py-project-template with your own values._
+
+[![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/py-project-template/blob/master/LICENSE)
+
+## Purpose
+
 Purpose or usecase of the project.
 
 
