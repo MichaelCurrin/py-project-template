@@ -16,6 +16,6 @@ jobs:
     - name: Install dependencies
       run: |
         make install 
-        make install-dev
+        make dev-install
     - name: Lint with autopep8
       run: autopep8 --diff --recursive pyprojecttemplate/
