@@ -15,8 +15,7 @@ jobs:
         python-version: 3.X
     - name: Install dependencies
       run: |
-        make install
+        make install 
+        make install-dev
     - name: Lint with autopep8
-      run: 
-        make dev-install
-        autopep8 --diff --recursive pyprojecttemplate/
+      run: autopep8 --diff --recursive pyprojecttemplate/
