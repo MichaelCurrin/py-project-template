@@ -1,6 +1,6 @@
 # Show summary of make commands.
 help:
-	@echo Includes lines that are non-indented (targets and comments) or empty, plus indented echo lines.
+	@echo Print lines that are not indented (targets and comments) or empty, plus any indented echo lines.
 	@egrep '(^\S)|(^$$)|\s+@echo' Makefile
 
 
