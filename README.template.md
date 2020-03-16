@@ -9,10 +9,17 @@ _TODO: In these badges, replace `MichaelCurrin/py-project-template` with your ow
 
 ## Purpose
 
-Purpose or usecase of the project.
+_TODO: Describe purpose or usecase of the project_
 
+## Features
 
-## Example Usage
+_TODO: Update feature list_
+
+- Foo
+- Bar
+- Baz
+
+## Example usage
 
 _TODO: Screenshot or command-line snippet._
 
