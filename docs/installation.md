@@ -5,10 +5,20 @@ _TODO: Delete any sections not needed._
 
 ## Project requirements
 
-_TODO: Update for appropriate minimum Python version and any other packages covered later._
+_TODO: Update for appropriate minimum Python version and any other OS or project-level packages covered later. Optoionally add more links._
 
-- some-package
-- Python 3.6+
+- some-os-package
+- [Python](https://www.python.org/) >= 3.6
+- some-py-package
+
+_OR use a table_
+
+Name                                     | Description
+---                                      | ---
+some-os-package                          | Some description.
+[Python](https://www.python.org/) >= 3.6 | Info about Python.
+some-py-package                          | Some description.
+
 
 ## Install OS-level dependencies
 
