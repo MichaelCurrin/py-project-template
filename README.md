@@ -118,11 +118,11 @@ Ignore/delete if you don't use [Visual Studio Code](https://code.visualstudio.co
 
 See the [.vscode](/.vscode) directory.
 
-The _settings_ file helps with running code and adding a gutter at 80 pixels. The _launch_ file can be used with the debug panel to run a Python script which is open in the IDE.
+The _settings_ file helps with running code and adding a gutter at 79 characters. The _launch_ file can be used with the debug panel to run a Python script which is open in the IDE.
 
 #### Settings
 
-The `python.pythonPath` value for User defaults to `"python"`.
+The `python.pythonPath` value for User settings defaults to `"python"`.
 
 If you use a virtual environment, use the _venv_ path in the settings file. This must be the full path - it will not pickup correctly inside the _venv_ if left as `"python"`.
 
@@ -131,6 +131,12 @@ If you don't use a virtual environment, the User default could be fine. You coul
 - `python3`
 - `/usr/bin/python3`
 - `/usr/bin/python3.X` - e.g. `3.6`. If you use the VSCode GUI to select the environment it might look like this.
+
+If you set config values in a dotenv file, you might want to add this to your settings file:
+
+```
+    "python.envFile": "${workspaceFolder}/.env"
+```
 
 #### Launch
 
