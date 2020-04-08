@@ -39,11 +39,11 @@ def main(args):
     print("Args:")
     print(args)
     print(SOME_GLOBAL)
-    
+
     foo()
     x = bar(1, 2)
     print(x)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(sys.argv[1:])
