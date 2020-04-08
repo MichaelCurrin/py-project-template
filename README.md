@@ -1,7 +1,8 @@
 # Py Project Template
 > Python 3 project scaffolding - covers directory structure, scripts and docs.
 
-[![Use this template](https://img.shields.io/badge/Use_this_template-green.svg)](https://github.com/MichaelCurrin/py-project-template/generate)
+<!-- Shields from https://shields.io/ -->
+[![Use this template](https://img.shields.io/badge/Use_this_template-brightgreen.svg)](https://github.com/MichaelCurrin/py-project-template/generate)
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/py-project-template/blob/master/LICENSE)
