@@ -19,4 +19,4 @@ jobs:
       - name: Lint
         run: make lint
       - name: Unit tests
-        run: unit
+        run: make unit
