@@ -8,7 +8,7 @@ def main(args):
     """
     Main command-line function.
     """
-    pass
+    print(args)
 
 
 if __name__ == '__main__':
