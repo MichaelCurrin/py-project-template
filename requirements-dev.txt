@@ -1,8 +1,7 @@
 pylint
 
 black
-flake8
 
-autopep8
+flake8
 
 pytest
