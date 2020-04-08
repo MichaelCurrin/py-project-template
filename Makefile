@@ -15,14 +15,16 @@ dev-install:
 
 
 # Apply Black formatting to Python files.
-format:
+fmt:
 	black .
 
-# Format with autopep8. (Alternative to black.)
-autopep8-diff:
-	autopep8 --diff --recursive pyprojecttemplate/
-autopep8-apply:
-	autopep8 --recursive pyprojecttemplate/
+# Print diff only.
+fmt-diff:
+	black --diff .
+
+# Return error code if any changes needed.
+fmt-check:
+	black --check .
 
 
 # Lint with flake8.
@@ -41,3 +43,6 @@ lint: flint pylint
 
 unit:
 	pytest
+
+# TODO: Add integration tests etc here or remove this.
+test: unit
