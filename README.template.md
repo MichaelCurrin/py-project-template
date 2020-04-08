@@ -29,7 +29,7 @@ _TODO: Screenshot or command-line snippet._
 
 ## Documentation
 
-_TODO: Either delete this Documentation section and the `docs` folder, or delete the sections after Documentation Docs section.
+_TODO: Either delete this Documentation section and the `docs` folder, or delete the sections after Documentation Docs section._
 
 See project [docs](/docs/).
 
