@@ -11,6 +11,7 @@ It contains the following, layed out according to PEP-8 naming and spacing:
 - call to main function, using command-line arguments and ignoring the path to the
     file itself at index 0.
 """
+# pylint: disable=blacklisted-name,invalid-name
 import sys
 
 
@@ -21,7 +22,7 @@ def foo():
     """
     Foo docstring here.
     """
-    pass
+    return
 
 
 def bar(a, b):
@@ -39,11 +40,11 @@ def main(args):
     print("Args:")
     print(args)
     print(SOME_GLOBAL)
-    
+
     foo()
     x = bar(1, 2)
     print(x)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(sys.argv[1:])

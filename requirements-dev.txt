@@ -1,2 +1,7 @@
 pylint
-autopep8
+
+black
+
+flake8
+
+pytest
