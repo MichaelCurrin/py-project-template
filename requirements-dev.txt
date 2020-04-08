@@ -1,2 +1,6 @@
 pylint
+
+black
 autopep8
+
+pytest
