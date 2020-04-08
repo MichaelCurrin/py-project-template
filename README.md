@@ -30,6 +30,8 @@ To use this project, follow either the [Add VS Code boilerplate](#add-vs-code-bo
     - [Rules for static text badges](#rules-for-static-text-badges)
     - [Examples](#examples)
     - [Placement](#placement)
+- [Repo admin](#repo-admin)
+    - [Formatting](#formatting)
 
 
 ## Add VS Code boilerplate
@@ -265,3 +267,28 @@ General format for a clickable badge with static text.
 To show badges side by side, separate them with spaces.
 
 To lay them out them vertically, put them one line under each other. No blank line is needed. Note that normally markdown normally needs an empty line between sentences to create a line break, but that does not apply here. Except placing the badge on a newline directly below a sentence will still output as all one line.
+
+
+## Repo admin
+
+### Formatting
+
+As an alternative to Black, you can use AutoPEP8 to format.
+
+1. Replace `black` with `autopep8` in [requirements-dev.txt](/requirements-dev.txt).
+2. Uninstall with
+    ```sh
+    $ pip uninstall autopep8
+    ```
+3. Install with
+    ```sh
+    $ make dev-install
+    ```
+4. Remove/update the format commands to use `autopep8` instead. e.g.
+    ```
+    fmt:
+	    autopep8 --in-place --recursive pyprojecttemplate/
+
+    fmt-diff:
+	    autopep8 --diff --recursive pyprojecttemplate/
+    ```
