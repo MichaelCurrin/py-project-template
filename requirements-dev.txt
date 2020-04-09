@@ -1,7 +1,6 @@
-pylint
+black~=19.10b0
 
-black
+flake8~=3.7
+pylint~=2.4
 
-flake8
-
-pytest
+pytest~=5.4
