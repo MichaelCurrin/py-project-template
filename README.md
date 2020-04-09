@@ -78,7 +78,7 @@ Follow this section fo instructions on how to copy of this entire repo as a base
 Note the force flag to overwrite.
 
 ```bash
-$ giv mv -f README.template.md README.md
+$ git mv -f README.template.md README.md
 ```
 
 Then customize the new `README.md` as you like.
