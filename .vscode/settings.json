@@ -5,4 +5,10 @@
     "python.pythonPath": "venv/bin/python",
 
     "editor.rulers": [79],
+    
+    "python.formatting.provider": "black", // TODO: Optionally change to "autopep8".
+
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
 }
