@@ -5,7 +5,7 @@
 [![Use this template](https://img.shields.io/badge/Use_this_template-brightgreen.svg)](https://github.com/MichaelCurrin/py-project-template/generate)
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/py-project-template/#license)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
 The style is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
 
