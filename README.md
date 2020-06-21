@@ -5,13 +5,18 @@
 [![Use this template](https://img.shields.io/badge/Use_this_template-brightgreen.svg)](https://github.com/MichaelCurrin/py-project-template/generate)
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/py-project-template/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MichaelCurrin/py-project-template/#license)
 
 The style is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
 
 This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
 
 To use this project, follow either the [Add VS Code boilerplate](#add-vs-code-boilerplate) or [Use this base project](#use-this-base-project) sections. Keep reading later in the doc if you need more detail.
+
+See also a related project - [MichaelCurrin/python-package-quickstart](https://github.com/MichaelCurrin/python-package-quickstart).
+
+
+**Table of contents**
 
 - [Add VS Code boilerplate](#add-vs-code-boilerplate)
 - [Use this base project](#use-this-base-project)
@@ -293,3 +298,10 @@ As an alternative to Black, you can use AutoPEP8 to format.
     fmt-diff:
 	    autopep8 --diff --recursive pyprojecttemplate/
     ```
+
+
+## License
+
+Released under [MIT](/LICENSE).
+
+A copy of the original license must be included if a significant portion of this template or project is used. You could rename it to `LICENSE-source` and then include your own `LICENSE` file with your name.
