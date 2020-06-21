@@ -13,20 +13,17 @@ install:
 dev-install:
 	pip install -r requirements-dev.txt
 
-
-# Apply Black formatting to Python files.
-fmt:
+# Apply Black formatting fixes to Python files.
+format:
 	black .
+format-check:
+	# Show any necessary changes and exit on error if they are needed.
+	black . --diff --check 
 
-# Print diff only.
-fmt-diff:
-	black --diff .
-
-# Return error code if any changes needed.
-fmt-check:
-	black --check .
-
-
+# Lint with Pylint.
+pylint:
+	# Exit on error code if needed.
+	pylint pyprojecttemplate || pylint-exit $?
 # Lint with flake8.
 flint:
 	# Stop the build if there are Python syntax errors or undefined names.
@@ -34,13 +31,13 @@ flint:
 	# Exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide.
 	flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-# Lint with Pylint.
-pylint:
-	pylint pyprojecttemplate
+lint: pylint flint
 
-lint: flint pylint
+# Apply formatting and lint fixes.
+fix: format lint
 
 
+# Tests.
 unit:
 	pytest
 
