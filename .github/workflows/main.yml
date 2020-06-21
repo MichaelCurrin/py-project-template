@@ -12,11 +12,17 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: 3.X
+
       - name: Install dependencies
         run: |
           make install
           make dev-install
+          
+      - name: Check formatting
+        run: make format-check
+      
       - name: Lint
         run: make lint
+        
       - name: Unit tests
         run: make unit
