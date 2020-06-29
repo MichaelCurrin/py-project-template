@@ -2,12 +2,13 @@
 > Python 3 project scaffolding - covers directory structure, scripts and docs.
 
 <!-- Shields from https://shields.io/ -->
-[![Use this template](https://img.shields.io/badge/Use_this_template-brightgreen.svg)](https://github.com/MichaelCurrin/py-project-template/generate)
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
-The style is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
+[![Use this template](https://img.shields.io/badge/Use_this_template-brightgreen?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
+
+The structure of this project is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
 
 This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
 
@@ -50,13 +51,13 @@ Follow this section to improve code linting and code running in VS Code. This co
 
 (Despite these settings, the Run button in the top right of the IDE does not start in a virtual environment unfortunately. That's okay as Debug can also run but is more powerful.)
 
-```bash
-$ cd <PATH_TO_YOUR_PROJECT>
+```sh
+$ cd PATH_TO_PROJECT
 ```
 
 Then run the following in your terminal to copy the scripts from Github in your project. _WARNING: This it will overwrite any existing files._
 
-```bash
+```sh
 mkdir -p .vscode
 BASE_URL='https://raw.githubusercontent.com/MichaelCurrin/py-project-template/master'
 curl "$BASE_URL/.vscode/settings.json" > .vscode/settings.json
@@ -82,7 +83,7 @@ Follow this section fo instructions on how to copy of this entire repo as a base
 
 Note the force flag to overwrite.
 
-```bash
+```sh
 $ git mv -f README.template.md README.md
 ```
 
@@ -93,7 +94,7 @@ Then customize the new `README.md` as you like.
 
 Rename the Python project directory and script to your custom name. For example: `myprojectname`.
 
-```bash
+```sh
 $ cd <PATH_TO_REPO>
 $ git mv pyprojectemplate myprojectname
 $ cd myprojectname
@@ -291,7 +292,7 @@ As an alternative to Black, you can use AutoPEP8 to format.
     $ make dev-install
     ```
 4. Remove/update the format commands to use `autopep8` instead. e.g.
-    ```
+    ```mk
     fmt:
 	    autopep8 --in-place --recursive pyprojecttemplate/
 
