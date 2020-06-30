@@ -34,6 +34,13 @@ _TODO: Either delete this Documentation section and the `docs` folder, or delete
 See project [docs](/docs/).
 
 
+## Requirements
+
+- Foo
+- Bar
+- Baz
+
+
 ## Installation
 
 _TODO: Put your installation instructions here._
@@ -51,6 +58,6 @@ _TODO: Put your developer instructions here._
 
 ## License
 
-_TODO_ Replace with your own license name_
+_TODO Replace with your own license name_
 
-Licensed under [MIT](/LICENSE).
+Released under [MIT](/LICENSE).
