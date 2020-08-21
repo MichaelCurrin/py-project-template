@@ -14,8 +14,7 @@ This repo is a good starting point for new projects plus I can use it as a refer
 
 To use this project, follow either the [Add VS Code boilerplate](#add-vs-code-boilerplate) or [Use this base project](#use-this-base-project) sections. Keep reading later in the doc if you need more detail.
 
-See also a related project - [MichaelCurrin/python-package-quickstart](https://github.com/MichaelCurrin/python-package-quickstart).
-
+See also a related PY quickstart project - [MichaelCurrin/python-package-quickstart](https://github.com/MichaelCurrin/python-package-quickstart). For Node, see [MichaelCurrin/node-project-template](https://github.com/MichaelCurrin/node-project-template)
 
 **Table of contents**
 
