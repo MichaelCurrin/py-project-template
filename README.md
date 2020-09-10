@@ -6,7 +6,11 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
+<div align="center">
+	
 [![Use this template](https://img.shields.io/badge/Use_this_template-brightgreen?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
+
+</div>
 
 The structure of this project is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
 
