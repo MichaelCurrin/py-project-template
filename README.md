@@ -1,5 +1,5 @@
-# Py Project Template
-> Python 3 project scaffolding - covers directory structure, scripts and docs.
+# Python Project Template
+> Project scaffolding for a Python 3 application - including sample files and structured docs
 
 <!-- Shields from https://shields.io/ -->
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
