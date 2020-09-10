@@ -6,6 +6,9 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
+[![Made with Python](https://img.shields.io/badge/Made_with-Python-blue?logo=python&logoColor=white)](https://python.org)
+
+
 <div align="center">
 	
 [![Use this template](https://img.shields.io/badge/Use_this_template-brightgreen?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
