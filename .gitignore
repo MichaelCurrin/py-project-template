@@ -1,9 +1,5 @@
-# Python compiled binaries.
 __pycache__/
 
 .pytest_cache/
 
-# Python virtual environment.
 venv
-
-# TODO: See README.md for instructions on filling this section.
