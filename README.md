@@ -1,4 +1,4 @@
-# Python Project Template
+# Python Project Template :snake: :stars:
 > Project scaffolding for a Python 3 application - including sample files and structured docs
 
 <!-- Shields from https://shields.io/ -->
@@ -6,7 +6,6 @@
 [![Made with Python](https://img.shields.io/badge/Made_with-Python-blue?logo=python&logoColor=white)](https://python.org)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
-
 
 
 <div align="center">
