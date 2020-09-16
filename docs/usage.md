@@ -9,7 +9,7 @@ $ source venv/bin/activate
 _TODO: Replace directory._
 
 ```
-$ cd pyprojecttemplate
+$ cd pyproject
 ```
 
 _TODO: Add to this section with commands based on specifics of your project._

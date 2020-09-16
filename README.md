@@ -203,11 +203,11 @@ That naming style has been adopted for naming of directories within this project
 Recommendations for using the project's directories (paths given relative to repo root):
 
 - **[/bin/](/bin/)** - Executable files. Usually a bash script, such as to run a python script within an environment, run a curl command or pipe data in or out of sqlite.
-- **[/pyprojecttemplate/](/pyprojecttemplate/)** - Main application scripts such as a server or command-line scripts should live in the top project directory, in this case named `pyprojecttemplate`. These should preferably not import from each other but can import from the `lib` module.
-- **[/pyprojecttemplate/lib/](/pyprojecttemplate/lib/)** - Library of common scripts. These should be independent of each other (i.e. do not import from each other), to reduce circular dependencies. They should also not depend on an `__init__.py` script. Any common logic such as setting up a path to the app directory should be setup in the `__init__.py` script.
-- **[/pyprojecttemplate/etc/](/pyprojecttemplate/etc/)** - Configuration files. For files such as `.json`, `.yml`, `.ini` or `.conf`.
-- **[/pyprojecttemplate/utils/](/pyprojecttemplate/utils/)** - Utilities. Standalone scripts which may use the `lib` module. These `utils` scripts should also be independent from each other should. If you find when developing that there is any logic duplicated across `utils` scripts, then that should be moved to a `lib` script and imported from `lib` into `utils` scripts.
-- **[/pyprojecttemplate/var/](/pyprojecttemplate/var/)** - Variable content such as a database file or text/CSV/JSON files to be used for input or which are outputted by a script. No scripts should live in the this directory.
+- **[/pyproject/](/pyproject/)** - Main application scripts such as a server or command-line scripts should live in the top project directory, in this case named `pyproject`. These should preferably not import from each other but can import from the `lib` module.
+- **[/pyproject/lib/](/pyproject/lib/)** - Library of common scripts. These should be independent of each other (i.e. do not import from each other), to reduce circular dependencies. They should also not depend on an `__init__.py` script. Any common logic such as setting up a path to the app directory should be setup in the `__init__.py` script.
+- **[/pyproject/etc/](/pyproject/etc/)** - Configuration files. For files such as `.json`, `.yml`, `.ini` or `.conf`.
+- **[/pyproject/utils/](/pyproject/utils/)** - Utilities. Standalone scripts which may use the `lib` module. These `utils` scripts should also be independent from each other should. If you find when developing that there is any logic duplicated across `utils` scripts, then that should be moved to a `lib` script and imported from `lib` into `utils` scripts.
+- **[/pyproject/var/](/pyproject/var/)** - Variable content such as a database file or text/CSV/JSON files to be used for input or which are outputted by a script. No scripts should live in the this directory.
 
 Benefits I found of this approach:
 
@@ -240,8 +240,8 @@ Or ignore CSV files in specific paths such as project variable files directory. 
 
 ```
 # Local CSVs and their lock files (if they are open in an editor).
-pyprojecttemplate/var/*.csv
-pyprojecttemplate/var/.~lock.*.csv#
+pyproject/var/*.csv
+pyproject/var/.~lock.*.csv#
 ```
 
 ## Badges
@@ -312,10 +312,10 @@ As an alternative to Black, you can use AutoPEP8 to format.
 4. Remove/update the format commands to use `autopep8` instead. e.g.
     ```mk
     fmt:
-	    autopep8 --in-place --recursive pyprojecttemplate/
+	    autopep8 --in-place --recursive pyproject/
 
     fmt-diff:
-	    autopep8 --diff --recursive pyprojecttemplate/
+	    autopep8 --diff --recursive pyproject/
     ```
 
 

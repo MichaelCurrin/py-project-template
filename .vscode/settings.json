@@ -1,11 +1,11 @@
 {
-    "terminal.integrated.cwd": "pyprojecttemplate", // TODO: Replace with own value.
-    "code-runner.cwd": "pyprojecttemplate",         // TODO: Replace with own value.
+    "terminal.integrated.cwd": "pyproject", // TODO: Replace with own value.
+    "code-runner.cwd": "pyproject",         // TODO: Replace with own value.
 
     "python.pythonPath": "venv/bin/python",
 
     "editor.rulers": [79],
-    
+
     "python.formatting.provider": "black", // TODO: Optionally change to "autopep8".
 
     "python.linting.enabled": true,
