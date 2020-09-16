@@ -1,3 +1,5 @@
+default: install
+
 # Show summary of make commands.
 help:
 	@echo 'Print lines that are not indented (targets and comments) or empty, plus any indented echo lines.'
