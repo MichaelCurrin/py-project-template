@@ -1,5 +1,5 @@
-# Project Name
-> Description of project
+# My Project Name
+> Description of my project
 
 _TODO: In these badges, replace `MichaelCurrin/py-project-template` with your own value and if necessary change MIT to your another license type._
 
@@ -10,7 +10,7 @@ _TODO: In these badges, replace `MichaelCurrin/py-project-template` with your ow
 
 ## Purpose
 
-_TODO: Describe purpose or usecase of the project_
+_TODO: Describe purpose or use-case of the project_
 
 
 ## Features
