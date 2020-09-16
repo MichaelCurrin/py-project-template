@@ -10,7 +10,7 @@
 
 
 <div align="center">
-	
+
 [![Use this template](https://img.shields.io/badge/Use_this_template-brightgreen?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
 
 </div>
@@ -98,31 +98,38 @@ Then customize the new `README.md` as you like.
 
 ### Complete project name references
 
-Rename the Python project directory and script to your custom name. For example: `myprojectname`.
+Rename the Python project directory and script to your custom name.
+
+For example we use the name `myprojectname/myprojectname.py` - both names are similar. This typically does not have any underscores in it and if you should avoid using a hyphen otherwise this package folder can't be used in an import statement outside your project.
 
 ```sh
-$ cd <PATH_TO_REPO>
-$ git mv pyprojectemplate myprojectname
+$ cd PATH_TO_REPO
+```
+
+#### Rename module
+
+```sh
+$ git mv pyproject myprojectname
 $ cd myprojectname
 ```
 
-Setup main application file.
+#### Setup main script
 
-```bash
-$ git rm pyprojectemplate.py
-$ touch myprojectname.py  # Replace with your own projectname.
+```sh
+$ git rm pyproject.py
+$ touch myprojectname.py
 ```
 
 Go through the _TODO_ items in the repo and complete them. See the rest is README if you don't know what a file is for.
 
-_FIXME: Is there is a way to use find, grep etc. to replace mentions across all files without going detailed? And on directory name. Also note renaming local repo folder._
+<!--_FIXME: Is there is a way to use find, grep etc. to replace mentions across all files without going detailed? And on directory name. Also note renaming local repo folder._-->
 
 
-### Cleanup
+### Clean-up
 
 If you don't need directories in project directory, delete them. They contain `.gitkeep` files - once deleted those changes must be added to version control.
 
-Delete [LICENSE](/LICENSE) and replace with your own.
+Delete [LICENSE](/LICENSE) and replace it with your own.
 
 
 ## Explanations and notes
