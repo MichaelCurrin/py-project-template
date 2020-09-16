@@ -307,7 +307,7 @@ As an alternative to Black, you can use AutoPEP8 to format.
     ```
 3. Install with
     ```sh
-    $ make dev-install
+    $ make install-dev
     ```
 4. Remove/update the format commands to use `autopep8` instead. e.g.
     ```mk

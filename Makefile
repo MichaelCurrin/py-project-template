@@ -12,15 +12,15 @@ install:
 	pip install -r requirements.txt
 
 # Install dev dependencies.
-dev-install:
+install-dev:
 	pip install -r requirements-dev.txt
 
 # Apply Black formatting fixes to Python files.
 format:
 	black .
 format-check:
-	# Show any necessary changes and exit on error if they are needed.
-	black . --diff --check 
+	# Exit with error status if fixes need to be applied.
+	black . --diff --check
 
 # Lint with Pylint.
 pylint:

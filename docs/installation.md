@@ -65,5 +65,5 @@ You may continue to [Usage](/docs/usage.md) doc.
 Optionally install dev dependencies.
 
 ```sh
-$ make dev-install
+$ make install-dev
 ```
