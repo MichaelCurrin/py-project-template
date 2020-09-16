@@ -30,7 +30,9 @@ See also a related PY quickstart project - [MichaelCurrin/python-package-quickst
     - [Get a local copy of the base project](#get-a-local-copy-of-the-base-project)
     - [Replace the README](#replace-the-readme)
     - [Complete project name references](#complete-project-name-references)
-    - [Cleanup](#cleanup)
+        - [Rename module](#rename-module)
+        - [Setup main script](#setup-main-script)
+    - [Clean-up](#clean-up)
 - [Explanations and notes](#explanations-and-notes)
     - [VSCode Settings](#vscode-settings)
         - [Settings](#settings)
@@ -45,6 +47,7 @@ See also a related PY quickstart project - [MichaelCurrin/python-package-quickst
     - [Placement](#placement)
 - [Repo admin](#repo-admin)
     - [Formatting](#formatting)
+- [License](#license)
 
 
 ## Add VS Code boilerplate
