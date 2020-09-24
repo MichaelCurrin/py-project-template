@@ -22,7 +22,7 @@ To use this project, follow either the [Add VS Code boilerplate](#add-vs-code-bo
 
 If you intend to install your package with `pip` in your other projects or upload it to PyPI, you might want to use [MichaelCurrin/python-package-quickstart](https://github.com/MichaelCurrin/python-package-quickstart) instead.
 
-For a Node quickstart template, see [MichaelCurrin/node-project-template](https://github.com/MichaelCurrin/node-project-template)
+For a Node quickstart template, see [MichaelCurrin/node-project-template](https://github.com/MichaelCurrin/node-project-template).
 
 **Table of contents**
 
