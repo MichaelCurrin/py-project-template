@@ -195,7 +195,7 @@ Unix has a convention of naming the root user's directories. Here are some which
 - `/lib` - Libraries need for binaries in `/bin`.
 - `/var` - Variable files, such as logs.
 
-Read more about those [here](https://github.com/MichaelCurrin/learn-to-code/blob/master/Bash/beginning_linux_programming/directory_structure.md).
+Read more about those in this guide - [Linux directory structure](https://github.com/MichaelCurrin/learn-to-code/blob/master/en/topics/shell/Bash/beginning_linux_programming/directory_structure.md).
 
 That naming style has been adopted for naming of directories within this project. That might seem might seem quirky, as I picked this up as a style from somewhere I worked before and haven't seen it in other projects. However, it makes sense to me and therefore I've adopted it for my own projects.
 
