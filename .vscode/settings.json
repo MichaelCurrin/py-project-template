@@ -1,14 +1,15 @@
 {
-    "terminal.integrated.cwd": "pyproject", // TODO: Replace with own value.
-    "code-runner.cwd": "pyproject",         // TODO: Replace with own value.
+    "_NOTE": "Replace pyproject with your package folder name",
+    "terminal.integrated.cwd": "pyproject",
+    "code-runner.cwd": "pyproject",
 
     "python.pythonPath": "venv/bin/python",
 
     "editor.rulers": [79],
 
-    "python.formatting.provider": "black", // TODO: Optionally change to "autopep8".
+    "python.formatting.provider": "black",
 
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Enabled": true
 }
