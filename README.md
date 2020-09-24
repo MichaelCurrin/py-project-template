@@ -297,27 +297,50 @@ To lay them out them vertically, put them one line under each other. No blank li
 
 ## Repo admin
 
-### Formatting
+### Change formatter
 
-As an alternative to Black, you can use AutoPEP8 to format.
+Instead of using Black for formatting, you can configure the project to use [AutoPEP8](https://pypi.org/project/autopep8/).
 
-1. Replace `black` with `autopep8` in [requirements-dev.txt](/requirements-dev.txt).
-2. Uninstall with
+1. Update [requirements-dev.txt](/requirements-dev.txt).
+	- Remove `black`.
+	- Add `autopep8`.
+2. Uninstall Black.
     ```sh
-    $ pip uninstall autopep8
+    $ pip uninstall black
     ```
-3. Install with
+3. Install.
     ```sh
     $ make install-dev
     ```
-4. Remove/update the format commands to use `autopep8` instead. e.g.
-    ```mk
-    fmt:
-	    autopep8 --in-place --recursive pyproject/
+4. Update targets in [Makefile](/Make).
+    - Remove/update the format commands to use `autopep8`. e.g.
+        ```make
+        fmt:
+            autopep8 --in-place --recursive pyproject/
 
-    fmt-diff:
-	    autopep8 --diff --recursive pyproject/
+        fmt-diff:
+            autopep8 --diff --recursive pyproject/
+        ```
+5. Update [settings.json](/.vscode/settings.json).
+    - Change `python.formatting.provider` from `"black"` to `"autopep8"`.
+
+### Add type checking
+
+Optionally add static type checking using [mypy](http://mypy-lang.org/).
+
+1. Update [requirements-dev.txt](/requirements-dev.txt).
+    - Add `mypy`.
+2. Install.
+    ```sh
+    $ make install-dev
     ```
+3. Add type checks to you `.py` files.
+4. Add target to [Makefile](/Makefile).
+    - Add target. e.g.
+        ```make
+        check-types:
+            mypy .
+        ```
 
 
 ## License
