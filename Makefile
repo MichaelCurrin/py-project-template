@@ -25,7 +25,8 @@ format-check:
 # Lint with PyLint.
 pylint:
 	# Exit on error code if needed.
-	pylint pyproject || pylint-exit $?
+	pylint pyproject || pylint-exit $$?
+
 # Lint with flake8.
 flake8:
 	# Stop the build if there are Python syntax errors or undefined names.
