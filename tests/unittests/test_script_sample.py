@@ -1,5 +1,5 @@
 """
-Unit tests module.
+Test script sample.
 """
 from pyproject.script_sample import foo, bar
 
