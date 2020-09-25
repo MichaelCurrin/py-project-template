@@ -339,7 +339,7 @@ Optionally add static type checking using [mypy](http://mypy-lang.org/).
     - Add target. e.g.
         ```make
         check-types:
-            mypy .
+            mypy pyproject tests
         ```
 
 
