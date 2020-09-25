@@ -341,7 +341,11 @@ Optionally add static type checking using [mypy](http://mypy-lang.org/).
         check-types:
             mypy pyproject tests
         ```
-
+5. Update `.gitignore`.
+    - Add line:
+        ```
+	.pytest_cache/
+        ```
 
 ## License
 
