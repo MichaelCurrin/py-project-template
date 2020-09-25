@@ -328,24 +328,8 @@ Instead of using Black for formatting, you can configure the project to use [Aut
 
 Optionally add static type checking using [mypy](http://mypy-lang.org/).
 
-1. Update [requirements-dev.txt](/requirements-dev.txt).
-    - Add `mypy`.
-2. Install.
-    ```sh
-    $ make install-dev
-    ```
-3. Add type checks to you `.py` files.
-4. Add target to [Makefile](/Makefile).
-    - Add target. e.g.
-        ```make
-        check-types:
-            mypy pyproject tests
-        ```
-5. Update `.gitignore`.
-    - Add line:
-        ```
-	.pytest_cache/
-        ```
+See [Add to project](https://github.com/MichaelCurrin/code-cookbook/blob/master/recipes/python/mypy/add-to-project.md) guide for MyPy.
+
 
 ## License
 
