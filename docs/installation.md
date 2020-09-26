@@ -38,7 +38,7 @@ $ brew install some-package
 
 Install packages with `apt` if you have it, otherwise `apt-get` can be used instead.
 
-```bash
+```sh
 $ sudo apt update
 $ sudo apt install some-package
 ```
