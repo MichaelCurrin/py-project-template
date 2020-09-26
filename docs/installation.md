@@ -30,7 +30,7 @@ Install [brew](https://brew.sh/).
 
 Install packages with `brew`.
 
-```bash
+```sh
 $ brew install some-package
 ```
 
@@ -58,12 +58,13 @@ Inside a Python packages inside the project's virtual environment using steps be
 $ make install
 ```
 
-You may continue to [Usage](/docs/usage.md) doc.
-
 ### Dev dependencies
 
-Optionally install dev dependencies.
+Install dev dependencies.
 
 ```sh
 $ make install-dev
 ```
+
+You may continue to [Usage](/docs/usage.md) doc.
+
