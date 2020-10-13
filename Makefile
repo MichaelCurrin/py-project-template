@@ -1,4 +1,7 @@
-default: install install-dev
+default: install install-dev lint format-check test
+
+all: install install-dev 
+
 
 # Show summary of make commands.
 help:
@@ -27,7 +30,7 @@ pylint:
 	# Exit on error code if needed.
 	pylint pyproject || pylint-exit $$?
 
-# Lint with flake8.
+# Lint with Flake8.
 flake8:
 	# Stop the build if there are Python syntax errors or undefined names.
 	flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
