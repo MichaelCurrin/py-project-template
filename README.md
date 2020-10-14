@@ -4,7 +4,6 @@
 <!-- Shields from https://shields.io/ -->
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
 [![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
-[![Known Vulnerabilities](https://snyk.io/test/github/MichaelCurrin/py-project-template/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/MichaelCurrin/py-project-template?targetFile=requirements.txt) <!-- Delete this badge if you don't use Snyk -->
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
