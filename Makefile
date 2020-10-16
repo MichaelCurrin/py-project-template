@@ -18,6 +18,7 @@ install:
 install-dev:
 	pip install -r requirements-dev.txt
 
+
 # Format with Black.
 format:
 	black .
@@ -43,7 +44,7 @@ lint: pylint flake8
 fix: format lint
 
 
-# Tests.
+# Run tests.
 unit:
 	pytest
 
