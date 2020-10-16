@@ -28,7 +28,7 @@ format-check:
 
 # Lint with PyLint.
 pylint:
-	# Exit on error code if needed.
+	# Exit on fatal error code.
 	pylint pyproject || pylint-exit $$?
 
 # Lint with Flake8.
