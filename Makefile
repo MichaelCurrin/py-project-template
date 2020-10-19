@@ -1,6 +1,6 @@
-default: install install-dev lint format-check test
+default: install install-dev
 
-all: install install-dev 
+all: install install-dev lint format-check test
 
 
 # Show summary of make commands.
