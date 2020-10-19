@@ -1,6 +1,7 @@
 {
     "_NOTE": "Replace pyproject with your package folder name",
-    "terminal.integrated.cwd": "pyproject",
+
+    // "terminal.integrated.cwd": "pyproject",
     "code-runner.cwd": "pyproject",
 
     "python.pythonPath": "venv/bin/python",
