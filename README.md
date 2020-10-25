@@ -10,7 +10,7 @@
 
 <div align="center">
 
-[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
+[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/py-project-template/generate)
 
 </div>
 
@@ -141,9 +141,9 @@ Delete [LICENSE](/LICENSE) and replace it with your own.
 
 ### VSCode Settings
 
-Ignore/delete if you don't use [Visual Studio Code](https://code.visualstudio.com/).
+Ignore/delete if you don't use [Visual Studio Code](https://code.visualstudio.com/) as your IDE. PyCharm is a great alternative.
 
-See the [.vscode](/.vscode) directory.
+See the [.vscode](/.vscode/) directory.
 
 The _settings_ file helps with running code and adding a gutter at 79 characters. The _launch_ file can be used with the debug panel to run a Python script which is open in the IDE.
 
@@ -161,8 +161,10 @@ If you don't use a virtual environment, the User default could be fine. You coul
 
 If you set config values in a dotenv file, you might want to add this to your settings file:
 
-```
+```json
+{
     "python.envFile": "${workspaceFolder}/.env"
+}
 ```
 
 #### Launch
@@ -181,8 +183,10 @@ This template comes with a _dotenv_ file - [.env](/.env) which includes paths to
 
 For interest, the file works in VSCode because of this global config setting:
 
-```
-"python.envFile": "${workspaceFolder}/.env"
+```json
+{
+    "python.envFile": "${workspaceFolder}/.env"
+}
 ```
 
 ## Naming conventions
@@ -298,13 +302,20 @@ To lay them out them vertically, put them one line under each other. No blank li
 
 ## Repo admin
 
+### Ignore
+
+Note that you do **not** need to add these to your `.gitignore` file as when they are created they will contain their own ignore files which say `*`.
+
+- `.pytest_cache/`
+- `.mypy_cache/`
+
 ### Change formatter
 
-Instead of using Black for formatting, you can configure the project to use [AutoPEP8](https://pypi.org/project/autopep8/).
+Instead of using _Black_ for formatting, you can configure the project to use [AutoPEP8](https://pypi.org/project/autopep8/).
 
 1. Update [requirements-dev.txt](/requirements-dev.txt).
-	- Remove `black`.
-	- Add `autopep8`.
+    - Remove `black`.
+    - Add `autopep8`.
 2. Uninstall Black.
     ```sh
     $ pip uninstall black
@@ -313,13 +324,12 @@ Instead of using Black for formatting, you can configure the project to use [Aut
     ```sh
     $ make install-dev
     ```
-4. Update targets in [Makefile](/Make).
+4. Update targets in [Makefile](/Makefile).
     - Remove/update the format commands to use `autopep8`. e.g.
         ```make
-        fmt:
+        format:
             autopep8 --in-place --recursive pyproject/
-
-        fmt-diff:
+        format-diff:
             autopep8 --diff --recursive pyproject/
         ```
 5. Update [settings.json](/.vscode/settings.json).
