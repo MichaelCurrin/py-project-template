@@ -304,7 +304,15 @@ To lay them out them vertically, put them one line under each other. No blank li
 
 ### Ignore
 
-Note that you do **not** need to add these to your `.gitignore` file as when they are created they will contain their own ignore files which say `*`.
+It is best to leave this as is in [.gitignore](/.gitignore) file:
+
+```
+venv
+```
+
+As then it covers both a directory (`venv/`) and a symlink (`venv`).
+
+Note that you do **not** need to add these to your [.gitignore](/.gitignore) file as when they are created they will contain their own ignore files which say `*`.
 
 - `.pytest_cache/`
 - `.mypy_cache/`
