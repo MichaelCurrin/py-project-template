@@ -29,7 +29,7 @@ format-check:
 # Lint with PyLint.
 pylint:
 	# Exit on fatal error code.
-	pylint pyproject || pylint-exit $$?
+	pylint pyproject || pylint-exit $$?  # TODO: Replace project name on an new projects.
 
 # Lint with Flake8.
 flake8:
