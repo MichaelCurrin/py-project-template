@@ -8,16 +8,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
 
+## How to use this starter project
+
+<!-- Once you have a new project, you can see delete this section but keep the Documentation section. -->
+
+
 <div align="center">
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/py-project-template/generate)
 
 </div>
-
-
-## How to use this starter project
-
-<!-- Once you have a new project, you can see delete this section but keep the Documentation section. -->
 
 See the [Template Notes](/docs/template-notes/) part of the docs.
 
@@ -26,7 +26,11 @@ See the [Template Notes](/docs/template-notes/) part of the docs.
 
 How to install and run this project.
 
+<div align="center">
+
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue)](/docs/)
+
+</div>
 
 
 ## License
