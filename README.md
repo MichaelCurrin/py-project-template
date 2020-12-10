@@ -17,18 +17,18 @@
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/py-project-template/generate)
 
-</div>
-
 See the [Template Notes](/docs/template-notes/) part of the docs.
+
+</div>
 
 
 ## Documentation
 
+<div align="center">
+  
 How to install and run this project.
 
-<div align="center">
-
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue)](/docs/)
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
 
 </div>
 
