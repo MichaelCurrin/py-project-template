@@ -1,6 +1,8 @@
 name: Python application
 
-on: push
+on:
+  push:
+    paths-ignore: "docs/**"
 
 jobs:
   build:
@@ -15,15 +17,16 @@ jobs:
           python-version: 3.X
 
       - name: Install dependencies
-        run: |
-          make install
-          make install-dev
+        run: make install
 
+      - name: Install dev dependencies
+        run: make install-dev
+        
       - name: Check formatting
         run: make format-check
 
       - name: Lint
         run: make lint
 
-      - name: Unit tests
+      - name: Run unit tests
         run: make unit
