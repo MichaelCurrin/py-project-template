@@ -17,7 +17,7 @@
 
 ## How to use this starter project
 
-<!-- Once you have a new project, you can see delete this section but keep the Documentation section.
+<!-- Once you have a new project, you can see delete this section but keep the Documentation section. -->
 
 See the [Template Notes](/docs/template-notes/) part of the docs.
 
