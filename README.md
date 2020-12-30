@@ -1,5 +1,5 @@
 # Python Project Template :snake: :stars:
-> Scaffolding for a Python 3 app - including scripts, tests, CI and docs
+> Scaffolding for a Python app - including scripts, tests, CI and docs
 
 <!-- Shields from https://shields.io/ -->
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
