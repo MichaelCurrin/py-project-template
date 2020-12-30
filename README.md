@@ -12,7 +12,6 @@
 
 <!-- Once you have a new project, you can see delete this section but keep the Documentation section. -->
 
-
 <div align="center">
 
 [![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/py-project-template/generate)
@@ -35,6 +34,6 @@ How to install and run this project.
 
 ## License
 
-Released under [MIT](/LICENSE).
+Released under [MIT](/LICENSE) by [@MichaelCurrin](https://github.com/MichaelCurrin).
 
 A copy of the original license must be included if a significant portion of this template or project is used. You could rename it to `LICENSE-source` and then include your own `LICENSE` file with your name.
