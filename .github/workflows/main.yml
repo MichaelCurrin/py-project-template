@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      - name: Set up latest Python 3
+      - name: Set up Python 3
         uses: actions/setup-python@v2
         with:
           python-version: 3.X
@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dev dependencies
         run: make install-dev
-        
+
       - name: Check formatting
         run: make format-check
 
