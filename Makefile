@@ -16,6 +16,11 @@ install:
 install-dev:
 	pip install -r requirements-dev.txt
 
+upgrade:
+	pip install pip --upgrade
+	pip install -r requirements.txt --upgrade
+	pip install -r requirements-dev.txt --upgrade
+
 
 # Format with Black.
 format:
