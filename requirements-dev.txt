@@ -1,6 +1,9 @@
 black>=20.8b1
 
+flake8
 pylint>=2.6.0
 pylint-exit>=1.2.0
+
+mypy>=0.800
 
 pytest>=6.2.2
