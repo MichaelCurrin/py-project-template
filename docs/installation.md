@@ -20,6 +20,13 @@ _OR use a table_
 | some-py-package                          | Some description.  |
 
 
+## Install hooks
+
+```sh
+$ make hooks
+```
+
+
 ## Install system dependencies
 
 _TODO: Include any instructions or commands to install a package or application, other than Python. Example below._

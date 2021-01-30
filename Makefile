@@ -1,11 +1,15 @@
 default: install install-dev
 
-all: install install-dev format-check lint typecheck test
+all: hooks install install-dev format-check lint typecheck test
 
 
 h help:
 	@egrep '(^\S)|(^$$)|\s+@echo' Makefile
 
+
+.PHONY: hooks
+hooks:
+	cd .git/hooks && ln -s -f ../../hooks/pre-push pre-push
 
 # Install core dependencies.
 install:
