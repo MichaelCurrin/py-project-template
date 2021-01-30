@@ -1,6 +1,6 @@
 default: install install-dev
 
-all: install install-dev format-check lint test
+all: install install-dev format-check lint typecheck test
 
 
 h help:
@@ -32,7 +32,7 @@ format-check:
 # Lint with PyLint.
 pylint:
 	# Exit on fatal error code.
-	pylint pyproject || pylint-exit $$?  # TODO: Replace project name on an new projects.
+	pylint pyproject || pylint-exit $$?  # TODO: Replace pyproject with your app directory.
 
 # Lint with Flake8.
 flake8:
@@ -46,6 +46,8 @@ lint: pylint flake8
 # Apply formatting and lint fixes.
 fix: format lint
 
+t typecheck:
+	mypy pyproject tests  # TODO: Replace pyproject with your app directory.
 
 # Run tests.
 unit:
