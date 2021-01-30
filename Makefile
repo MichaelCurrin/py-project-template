@@ -1,11 +1,9 @@
 default: install install-dev
 
-all: install install-dev lint format-check test
+all: install install-dev format-check lint test
 
 
-# Show summary of make commands.
 h help:
-	@echo 'Print lines that are not indented (targets and comments) or empty, plus any indented echo lines.'
 	@egrep '(^\S)|(^$$)|\s+@echo' Makefile
 
 
