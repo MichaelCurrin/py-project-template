@@ -54,10 +54,10 @@ Create and activate a virtual environment.
 $ python3 -m venv venv
 
 $ # Linux/macOS
-$ source venv/bin/activate  
+$ source venv/bin/activate
 $  # Windows
-$ venv\Scripts\activate    
-````
+$ venv\Scripts\activate
+```
 
 If you need more info, follow this guide to [Setup a Python 3 Virtual Environment](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7).
 
@@ -71,11 +71,8 @@ $ make install
 
 ### Dev dependencies
 
-Install dev dependencies.
-
 ```sh
 $ make install-dev
 ```
 
-You may continue to [Usage](/docs/usage.md) doc.
-
+You may continue to the [Usage](/docs/usage.md) doc.
