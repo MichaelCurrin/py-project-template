@@ -24,7 +24,7 @@ See the [Template Notes](/docs/template-notes/) part of the docs.
 ## Documentation
 
 <div align="center">
-  
+
 How to install and run this project.
 
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
