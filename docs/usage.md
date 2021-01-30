@@ -6,7 +6,7 @@ $ cd PATH_TO_REPO
 $ source venv/bin/activate
 ```
 
-_TODO: Replace directory._
+_TODO: Replace with your app directory._
 
 ```sh
 $ cd pyproject
