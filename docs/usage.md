@@ -6,6 +6,52 @@ $ cd PATH_TO_REPO
 $ source venv/bin/activate
 ```
 
+
+## View available make commands
+
+```bash
+$ make help
+```
+
+
+# Format
+
+```sh
+$ make fmt-fix
+```
+
+
+## Lint
+
+```sh
+$ make lint
+```
+
+## Check types
+
+
+```sh
+$ make typecheck
+```
+
+## Test
+
+```sh
+$ make test
+```
+
+
+## Run
+
+Run application.
+
+```sh
+$ make run
+```
+
+
+## Run Python commands
+
 _TODO: Replace with your app directory._
 
 ```sh
@@ -22,5 +68,5 @@ baz?
 ```
 
 ```sh
-$ ./foo/bar.py --help
+$ foo/bar.py --help
 ```
