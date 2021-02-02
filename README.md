@@ -14,9 +14,9 @@
 
 <div align="center">
 
-[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github)](https://github.com/MichaelCurrin/py-project-template/generate)
+[![Use this template](https://img.shields.io/badge/Genereate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
 
-See the [Template Notes](/docs/template-notes/) part of the docs.
+See the [Template Notes](/docs/template-notes/) part of the docs for more info.
 
 </div>
 
@@ -25,7 +25,7 @@ See the [Template Notes](/docs/template-notes/) part of the docs.
 
 <div align="center">
 
-How to install and run this project.
+How to install and run this project:
 
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
 
