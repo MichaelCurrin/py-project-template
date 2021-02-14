@@ -40,7 +40,9 @@ pylint:
 
 # Lint with Flake8.
 flake8:
+	# Error on syntax errors or undefined names.
 	flake8 . --select=E9,F63,F7,F82 --show-source
+	# Warn on everything else.
 	flake8 . --exit-zero
 
 lint: pylint flake8
