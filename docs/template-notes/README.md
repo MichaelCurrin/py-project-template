@@ -35,9 +35,9 @@ For a Node quickstart template, see [MichaelCurrin/node-project-template](https:
     - [Examples](#examples)
     - [Placement](#placement)
 - [Repo admin](#repo-admin)
+    - [Ignore](#ignore)
     - [Change formatter](#change-formatter)
     - [Add type checking](#add-type-checking)
-- [License](#license)
 
 
 ## Add VS Code boilerplate
