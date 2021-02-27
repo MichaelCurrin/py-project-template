@@ -323,9 +323,9 @@ Instead of using _Black_ for formatting, you can configure the project to use [A
 4. Update targets in [Makefile](/Makefile).
     - Remove/update the format commands to use `autopep8`. e.g.
         ```make
-        format:
+        fmt:
             autopep8 --in-place --recursive pyproject/
-        format-diff:
+        fmt-check:
             autopep8 --diff --recursive pyproject/
         ```
 5. Update [settings.json](/.vscode/settings.json).

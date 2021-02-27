@@ -14,10 +14,10 @@ $ make help
 ```
 
 
-# Format
+## Format
 
 ```sh
-$ make fmt-fix
+$ make fmt
 ```
 
 

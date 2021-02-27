@@ -1,6 +1,6 @@
 default: install install-dev
 
-all: hooks install install-dev format-check lint typecheck test
+all: hooks install install-dev fmt-check lint typecheck test
 
 
 h help:
@@ -26,10 +26,10 @@ upgrade:
 	pip install -r requirements-dev.txt --upgrade
 
 
-format:
+fmt:
 	black .
 	isort .
-format-check:
+fmt-check:
 	black . --diff --check
 	isort . --diff --check-only
 
@@ -48,7 +48,8 @@ flake8:
 lint: pylint flake8
 
 # Apply formatting and lint fixes.
-fix: format lint
+fix: fmt lint
+
 
 t typecheck:
 	mypy pyproject tests  # TODO: Replace pyproject with your app directory.
