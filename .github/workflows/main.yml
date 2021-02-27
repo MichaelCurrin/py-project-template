@@ -23,7 +23,7 @@ jobs:
         run: make install-dev
 
       - name: Check formatting
-        run: make format-check
+        run: make fmt-check
 
       - name: Lint
         run: make lint
