@@ -1,7 +1,7 @@
 """
 Test script sample.
 """
-from pyproject.script_sample import foo, bar
+from pyproject.script_sample import bar, foo
 
 
 def test_foo():
