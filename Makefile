@@ -26,12 +26,12 @@ upgrade:
 	pip install -r requirements-dev.txt --upgrade
 
 
-# Format with Black.
 format:
 	black .
+	isort .
 format-check:
-	# Exit with error status if fixes need to be applied.
 	black . --diff --check
+	isort . --diff --check-only
 
 # Lint with PyLint.
 pylint:
