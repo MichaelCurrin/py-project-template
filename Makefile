@@ -53,6 +53,7 @@ fix: format lint
 t typecheck:
 	mypy pyproject tests  # TODO: Replace pyproject with your app directory.
 
+
 # Run tests.
 unit:
 	pytest
