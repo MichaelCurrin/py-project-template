@@ -18,7 +18,7 @@
 
 ## How to use this starter project
 
-<!-- Once you have a new project, you can see delete this section but keep the Documentation section. -->
+<!-- Once you have a new project, you should delete this section but keep the Documentation section. -->
 
 <div align="center">
 
@@ -30,10 +30,9 @@ See the [Template Notes](/docs/template-notes/) part of the docs for more info.
 
 
 ## Documentation
+> How to install and run this project
 
 <div align="center">
-
-How to install and run this project:
 
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
 
