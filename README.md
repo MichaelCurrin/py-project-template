@@ -7,6 +7,14 @@
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/py-project-template/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
+[![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
+
+[![code style - black](https://img.shields.io/badge/code_style-black-blue)](https://black.readthedocs.io/)
+[![dev dependency - flake8](https://img.shields.io/badge/dev_dependency-flake8-blue)](https://pypi.org/project/flake8)
+[![dev dependency - pylint](https://img.shields.io/badge/dev_dependency-pylint-blue)](https://pypi.org/project/pylint)
+[![dev dependency - mypy](https://img.shields.io/badge/dev_dependency-mypy-blue)](https://pypi.org/project/mypy)
+[![dev dependency - pytest](https://img.shields.io/badge/dev_dependency-pytest-blue)](https://pypi.org/project/pytest)
+
 
 ## How to use this starter project
 
