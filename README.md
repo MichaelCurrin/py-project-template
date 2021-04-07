@@ -1,11 +1,11 @@
 # Python Project Template :snake: :stars:
 > Scaffolding for a Python app - including scripts, tests, CI and docs
 
-<!-- Shields from https://shields.io/ -->
+<!-- Shields generated with https://michaelcurrin.github.io/badge-generator/ -->
+
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
-[![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
-[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
+[![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/py-project-template/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
 
 ## How to use this starter project
