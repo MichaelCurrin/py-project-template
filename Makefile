@@ -55,7 +55,7 @@ fix: fmt lint
 
 
 t typecheck:
-	mypy $(APP_DIR) tests .
+	mypy $(APP_DIR) tests
 
 
 # Run tests.
