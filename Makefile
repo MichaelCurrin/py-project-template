@@ -13,7 +13,7 @@ hooks:
 
 # Install core dependencies.
 install:
-	python -m pip install --upgrade pip
+	pip install pip --upgrade
 	pip install -r requirements.txt
 
 # Install dev dependencies.
@@ -29,6 +29,7 @@ upgrade:
 fmt:
 	black .
 	isort .
+	
 fmt-check:
 	black . --diff --check
 	isort . --diff --check-only
