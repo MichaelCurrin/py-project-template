@@ -8,6 +8,10 @@ def main(args):
     """
     Main command-line function.
     """
+    print("Hello, World!")
+    print()
+
+    print("Args:")
     print(args)
 
 
