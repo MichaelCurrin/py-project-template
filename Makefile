@@ -1,3 +1,5 @@
+APP_DIR = pyproject  # TODO: Replace with the name of your app directory.
+
 default: install install-dev
 
 all: hooks install install-dev fmt-check lint typecheck test
@@ -29,7 +31,7 @@ upgrade:
 fmt:
 	black .
 	isort .
-	
+
 fmt-check:
 	black . --diff --check
 	isort . --diff --check-only
@@ -37,7 +39,7 @@ fmt-check:
 # Lint with PyLint.
 pylint:
 	# Exit on fatal error code.
-	pylint pyproject || pylint-exit $$?  # TODO: Replace pyproject with your app directory.
+	pylint $(APP_DIR) || pylint-exit $$?
 
 # Lint with Flake8.
 flake8:
@@ -53,7 +55,7 @@ fix: fmt lint
 
 
 t typecheck:
-	mypy pyproject tests  # TODO: Replace pyproject with your app directory.
+	mypy $(APP_DIR) tests .
 
 
 # Run tests.
