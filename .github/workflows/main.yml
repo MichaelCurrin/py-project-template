@@ -3,7 +3,7 @@ name: Python application
 on:
   push:
     paths-ignore:
-      - docs/
+      - "docs/**"
       - README.md
 
 jobs:
