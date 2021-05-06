@@ -2,9 +2,13 @@
 
 <!-- You can delete this template-notes directory in your copy of this project. -->
 
-The structure of this project is based on conventions in the Python community, what I have picked up from other developers I have worked with, plus some of my own preferences which I've evolved over time.
+The structure of this project is based on:
 
-This repo is a good starting point for new projects plus I can use it as a reference of existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
+- conventions in the Python community, 
+- what I have picked up from other developers I have worked with, plus 
+- some of my own preferences which I've evolved over time.
+
+This repo is a good starting point for new projects, plus I can use it as a reference for existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
 
 To use this project, follow either the [Add VS Code boilerplate](#add-vs-code-boilerplate) or [Use this base project](#use-this-base-project) sections. Keep reading later in the doc if you need more detail.
 
@@ -335,4 +339,4 @@ Instead of using _Black_ for formatting, you can configure the project to use [A
 
 Optionally add static type checking using [mypy](http://mypy-lang.org/).
 
-See [Add to project](https://github.com/MichaelCurrin/code-cookbook/blob/master/recipes/python/mypy/add-to-project.md) guide for Mypy.
+See my [Add to project](https://michaelcurrin.github.io/code-cookbook/recipes/python/mypy/add-to-project.html) guide for Mypy.
