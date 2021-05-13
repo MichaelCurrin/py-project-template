@@ -57,5 +57,5 @@ t typecheck:
 unit:
 	pytest
 
-# TODO: Add integration tests etc here or remove this target.
+# TODO: Add integration tests here.
 test: unit
