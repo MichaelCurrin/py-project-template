@@ -23,9 +23,9 @@
 
 [![Use this template](https://img.shields.io/badge/Genereate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
 
-See the [Template Notes](/docs/template-notes/) part of the docs for more info.
-
 </div>
+
+See the [Template Notes](/docs/template-notes/) part of the docs for more info.
 
 If you're interested in running in a container, see the [Python app](https://github.com/MichaelCurrin/docker-quickstarts/tree/master/examples/python_app) in Docker Quickstarts repo.
 
