@@ -39,7 +39,7 @@ See the [Template Notes](/docs/template-notes/) part of the docs for more info.
 
 <div align="center">
 
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](https://michaelcurrin.github.io/py-project-template/)
 
 </div>
 
