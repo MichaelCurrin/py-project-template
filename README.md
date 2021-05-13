@@ -1,5 +1,5 @@
-# Python Project Template :snake: :stars:
-> Scaffolding for a Python app - including scripts, tests, CI and docs
+# Python Project Template 🐍 📦
+> Starter template for a Python app - including scripts, tests, CI and docs
 
 <!-- Shields generated with https://michaelcurrin.github.io/badge-generator/ -->
 
@@ -9,6 +9,7 @@
 
 [![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
 
+<!-- You can take these out if you don't care about them in your new project. -->
 [![code style - black](https://img.shields.io/badge/code_style-black-blue)](https://black.readthedocs.io/)
 [![dev dependency - flake8](https://img.shields.io/badge/dev_dependency-flake8-blue)](https://pypi.org/project/flake8)
 [![dev dependency - pylint](https://img.shields.io/badge/dev_dependency-pylint-blue)](https://pypi.org/project/pylint)
@@ -18,8 +19,6 @@
 
 ## How to use this starter project
 
-<!-- Once you have a new project, you should delete this section but keep the Documentation section. -->
-
 <div align="center">
 
 [![Use this template](https://img.shields.io/badge/Genereate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
@@ -27,6 +26,8 @@
 See the [Template Notes](/docs/template-notes/) part of the docs for more info.
 
 </div>
+
+If you're interested in running in a container, see the [Python app](https://github.com/MichaelCurrin/docker-quickstarts/tree/master/examples/python_app) in Docker Quickstarts repo.
 
 
 ## Documentation
