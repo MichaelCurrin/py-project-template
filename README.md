@@ -1,5 +1,5 @@
 # Python Project Template 🐍 📦
-> Starter template for a Python app - including scripts, tests, CI and docs
+> Starter template for a Python app - including CI and docs
 
 <!-- Shields generated with https://michaelcurrin.github.io/badge-generator/ -->
 
