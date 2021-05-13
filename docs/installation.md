@@ -35,7 +35,7 @@ _TODO: Include any instructions or commands to install a package or application,
 
 Install [brew](https://brew.sh/).
 
-Install packages with `brew`.
+Install Python with `brew`.
 
 ```sh
 $ brew install python3
@@ -59,14 +59,18 @@ Create and activate a virtual environment.
 
 ```sh
 $ python3 -m venv venv
-
-$ # Linux/macOS
-$ source venv/bin/activate
-$  # Windows
-$ venv\Scripts\activate
 ```
 
-If you need more info, follow this guide to [Setup a Python 3 Virtual Environment](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7).
+- Linux/macOS
+    ```sh
+    $ source venv/bin/activate
+    ```
+- Windows
+    ```console
+    > venv\Scripts\activate
+    ```
+
+If you need more info, follow this guide to [Set up a Python 3 Virtual Environment](https://gist.github.com/MichaelCurrin/3a4d14ba1763b4d6a1884f56a01412b7).
 
 Next, you can install Python packages into the project's virtual environment.
 
@@ -82,4 +86,4 @@ $ make install
 $ make install-dev
 ```
 
-You may continue to the [Usage](/docs/usage.md) doc.
+You may continue to the [Usage](usage.md) doc.
