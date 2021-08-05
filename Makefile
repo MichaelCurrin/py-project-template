@@ -20,7 +20,6 @@ install:
 
 install-dev:
 	pip install -r requirements-dev.txt
-	mypy --install-types --non-interactive
 
 upgrade:
 	pip install pip --upgrade
