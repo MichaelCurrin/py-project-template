@@ -1,3 +1,5 @@
+export PYTHONPATH
+
 APP_DIR = pyproject  # TODO: Replace with the name of your app directory.
 
 default: install install-dev
@@ -37,7 +39,9 @@ fmt-check:
 
 pylint:
 	# Exit on fatal error code.
-	pylint $(APP_DIR) || pylint-exit $$?
+	source .env \
+		&& pylint $(APP_DIR) \
+		|| pylint-exit $$?
 
 flake8:
 	# Error on syntax errors or undefined names.
