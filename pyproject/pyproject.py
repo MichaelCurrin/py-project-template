@@ -3,7 +3,7 @@ Main application file.
 """
 import sys
 
-from lib import greet
+from .lib import greet
 
 
 def main(args):
