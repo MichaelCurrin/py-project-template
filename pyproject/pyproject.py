@@ -3,16 +3,15 @@ Main application file.
 """
 import sys
 
+from lib import greet
+
 
 def main(args):
     """
     Main command-line function.
     """
-    print("Hello, World!")
-    print()
-
-    print("Args:")
-    print(args)
+    name = args.pop(0)
+    print(greet(name))
 
 
 if __name__ == "__main__":
