@@ -3,7 +3,7 @@ Library initialization module.
 """
 
 
-def greet(name: str) -> None:
+def greet(name: str) -> str:
     """
     Greet the user.
     """
