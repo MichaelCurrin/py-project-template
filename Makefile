@@ -59,3 +59,6 @@ unit:
 
 # TODO: Add integration tests here.
 test: unit
+
+run:
+	cd $(APP_DIR) && python ./pyproject.py World
