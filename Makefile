@@ -1,6 +1,7 @@
-export PYTHONPATH
-
+SHELL = /bin/bash
 APP_DIR = pyproject  # TODO: Replace with the name of your app directory.
+
+export PYTHONPATH
 
 default: install install-dev
 
