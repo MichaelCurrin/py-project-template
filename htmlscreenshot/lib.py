@@ -16,7 +16,7 @@ def read(path_str: str) -> list[str]:
     return urls
 
 
-def slugify(value):
+def slugify(value: str) -> str:
     value = value.encode("ascii", errors="replace").decode()
 
     return PATTERN.sub("-", value)
