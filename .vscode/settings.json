@@ -1,7 +1,6 @@
 {
     "code-runner.cwd": "htmlscreenshot",
-
-    "python.pythonPath": "venv/bin/python",
+    "python.defaultInterpreterPath": "venv/bin/python",
 
     "editor.rulers": [79],
 
