@@ -1,5 +1,5 @@
 # HTML Screenshot PY
-Python web scraper that creates screenshot images for given URLs
+> Python web scraper that creates screenshot images for given URLs
 
 Based on [Tutorial](https://pythonbasics.org/selenium-screenshot/).
 
