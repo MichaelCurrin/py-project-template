@@ -9,10 +9,10 @@ from time import sleep
 
 from selenium import webdriver
 
+from . import lib
+
 OUT_DIR = Path(__file__).parent / "var"
 WAIT_S = 3
-
-from . import lib
 
 driver = None
 
