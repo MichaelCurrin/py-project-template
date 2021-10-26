@@ -50,15 +50,15 @@ t typecheck:
 	mypy $(APP_DIR) tests
 
 
-pages-help:
-	python -m htmlscreenshot
-
-pages-demo:
-	python -m htmlscreenshot 'sample.txt'
-
-
 page-help:
 	python -m htmlscreenshot.scrape
 
 page-demo:
 	python -m htmlscreenshot.scrape 'https://www.python.org'
+
+
+pages-help:
+	python -m htmlscreenshot
+
+pages-demo:
+	python -m htmlscreenshot "$(APP_DIR)/sample.txt"
