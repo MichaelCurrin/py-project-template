@@ -39,7 +39,7 @@ def load(url: str) -> str:
 
     :return title: Derived from the title on the page or the URL.
     """
-    print(url)
+    print(f"Requesting {url}")
     assert url.startswith("http"), f"URL must start with http(s) - got: {url}"
 
     driver.get(url)
@@ -50,10 +50,12 @@ def load(url: str) -> str:
 
     title = driver.title
 
-    print(f"Loaded: {url} - '{title}'")
-
-    if not title:
+    if title:
+        print(f"Loaded with title: '{title}'")
+    else:
+        print("Loaded but no title found")
         title = url
+    print()
 
     return title
 
