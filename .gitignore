@@ -1,5 +1,6 @@
-geckodriver.log
-
-var/*.png
+__pycache__/
 
 venv
+
+geckodriver.log
+var/*.png
