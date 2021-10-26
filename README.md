@@ -9,6 +9,7 @@ Note use of Selenium 3, as version 4 causes Geckodriver to crash.
 ## Requirements
 
 - Python 3
+- Firefox
 - Geckodriver
 
 
@@ -16,9 +17,11 @@ Note use of Selenium 3, as version 4 causes Geckodriver to crash.
 
 Install Python 3.
 
+Install Firefox.
+
 Install Geckodriver.
 
-Install project packages.
+Install project packages:
 
 ```sh
 $ make install
