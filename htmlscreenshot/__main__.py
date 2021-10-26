@@ -1,5 +1,4 @@
 import sys
-from pathlib import Path
 
 from . import lib, scrape
 
@@ -21,8 +20,7 @@ def process(path_str: str) -> None:
 
 def main(args: list[str]) -> None:
     if not args:
-        app_dir = Path(__file__)
-        print(f"Required arg: PATH")
+        print("Required arg: PATH")
         print("Provide a path to a text file of one URL per line")
         sys.exit(0)
 
