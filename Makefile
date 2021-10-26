@@ -47,18 +47,18 @@ fix: fmt lint
 
 
 t typecheck:
-	mypy $(APP_DIR) tests
+	mypy $(APP_DIR)
 
 
 page-help:
-	python -m htmlscreenshot.scrape
+	@python -m htmlscreenshot.scrape
 
 page-demo:
 	python -m htmlscreenshot.scrape 'https://www.python.org'
 
 
 pages-help:
-	python -m htmlscreenshot
+	@python -m htmlscreenshot
 
 pages-demo:
 	python -m htmlscreenshot "$(APP_DIR)/sample.txt"
