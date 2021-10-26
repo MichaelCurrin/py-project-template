@@ -25,7 +25,7 @@ def quit():
     driver.quit()
 
 
-def setup_driver():
+def setup_driver() -> None:
     global driver
     driver = webdriver.Firefox()
 
@@ -33,7 +33,7 @@ def setup_driver():
     driver.implicitly_wait(WAIT_S)
 
 
-def load(url):
+def load(url: str) -> str:
     """
     Request a given webpage URL.
 
@@ -58,18 +58,17 @@ def load(url):
     return title
 
 
-def save(name="test.png"):
+def save(name="test.png") -> None:
     name = lib.slugify(name)
 
     if not name.endswith(".png"):
         name = f"{name}.png"
 
     out_path = OUT_DIR / name
-
     driver.get_screenshot_as_file(str(out_path))
 
 
-def process(url):
+def process(url: str) -> None:
     """
     Convert a webpage URL into an image.
     """
@@ -79,8 +78,7 @@ def process(url):
 
 def main(args: list[str]) -> None:
     if not args:
-        app_dir = Path(__file__)
-        print(f"Required arg: URL")
+        print("Required arg: URL")
         sys.exit(0)
 
     setup_driver()
