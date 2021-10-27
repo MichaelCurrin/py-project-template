@@ -12,7 +12,7 @@ Based on [Tutorial](https://pythonbasics.org/selenium-screenshot/).
 $ python -m htmlscreenshot.scrape 'https://example.com'
 ```
 
-Then view the output directory.
+Then find your PNG in the project's output directory.
 
 
 ## Installation
