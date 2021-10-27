@@ -1,11 +1,12 @@
 # HTML Screenshot PY
 > Python web scraper that creates screenshot images for given URLs
 
+[![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
+[![dependency - selenium](https://img.shields.io/badge/dependency-selenium-blue)](https://pypi.org/project/selenium)
+
 A simple CLI app to automate taking screenshots of websites as a local arcnive, whether your own or by others.
 
 The web is fast-changing - maybe you want to save an article or a design that inspires you before it moves or disappears from the internet. Or maybe you want to track the changes to a website over time.
-
-Based on [Tutorial](https://pythonbasics.org/selenium-screenshot/).
 
 
 ## Sample
@@ -101,6 +102,12 @@ $ python -m htmlscreenshot ~/path/to/urls.txt
 ```
 
 Where the file is one URL per like, like [sample.txt](/htmlscreenshot/sample.txt).
+
+
+## Resources
+
+- https://www.selenium.dev/
+- [Tutorial](https://pythonbasics.org/selenium-screenshot/) which this project was based on.
 
 
 ## License
