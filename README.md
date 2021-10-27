@@ -2,7 +2,7 @@
 > Python web scraper that creates screenshot images for given URLs
 
 [![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
-[![dependency - selenium](https://img.shields.io/badge/dependency-selenium-blue)](https://pypi.org/project/selenium)
+[![dependency - selenium](https://img.shields.io/badge/selenium-3-blue)](https://pypi.org/project/selenium)
 
 A simple CLI app to automate taking screenshots of websites as a local arcnive, whether your own or by others.
 
