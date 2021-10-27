@@ -6,6 +6,15 @@ A simple CLI app to automate taking screenshots of websites, whether your own or
 Based on [Tutorial](https://pythonbasics.org/selenium-screenshot/).
 
 
+## Sample
+
+```sh
+$ python -m htmlscreenshot.scrape 'https://example.com'
+```
+
+Then view the output directory.
+
+
 ## Installation
 
 ### Requirements
@@ -46,6 +55,8 @@ _Note use of Selenium 3, as version 4 causes Geckodriver to crash._
 
 
 ## Usage
+
+Generated screenshots will be in the unversioned `htmlscreenshot/var/` directory.
 
 ### Help
 
