@@ -15,11 +15,11 @@ Note use of Selenium 3, as version 4 causes Geckodriver to crash.
 
 ## Installation
 
-Install Python 3.
+Install system dependencies:
 
-Install Firefox.
-
-Install Geckodriver.
+- Python 3
+- Firefox
+- Geckodriver
 
 Install project packages:
 
@@ -50,7 +50,7 @@ Run one of the demo tasks.
 $ make page-demo
 ```
 
-This uses URLs in the [sample.txt](htmlscreenshot/sample.txt).
+This uses URLs in the [sample.txt](/htmlscreenshot/sample.txt) file.
 
 ```sh
 $ make pages-demo
@@ -69,3 +69,5 @@ Run against a text file of URLs. e.g.
 ```sh
 $ python -m htmlscreenshot ~/path/to/urls.txt
 ```
+
+Where the file is one URL per like, like [sample.txt](/htmlscreenshot/sample.txt).
