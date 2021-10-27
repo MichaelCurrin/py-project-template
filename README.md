@@ -1,7 +1,9 @@
 # HTML Screenshot PY
 > Python web scraper that creates screenshot images for given URLs
 
-A simple CLI app to automate taking screenshots of websites, whether your own or by others.
+A simple CLI app to automate taking screenshots of websites as a local arcnive, whether your own or by others.
+
+The web is fast-changing - maybe you want to save an article or a design that inspires you before it moves or disappears from the internet. Or maybe you want to track the changes to a website over time.
 
 Based on [Tutorial](https://pythonbasics.org/selenium-screenshot/).
 
