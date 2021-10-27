@@ -8,9 +8,9 @@ Based on [Tutorial](https://pythonbasics.org/selenium-screenshot/).
 
 ## Requirements
 
-- Python 3
+- [Python 3](https://www.python.org)
 - Firefox
-- Geckodriver
+- [Geckodriver](https://firefox-source-docs.mozilla.org/testing/geckodriver/index.html)
 
 
 ## Installation
@@ -18,8 +18,8 @@ Based on [Tutorial](https://pythonbasics.org/selenium-screenshot/).
 Install system dependencies:
 
 - [Install Python 3](https://gist.github.com/MichaelCurrin/57caae30bd7b0991098e9804a9494c23)
-- Firefox
-- Geckodriver
+- [Install Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- Install Geckodriver
 
 Install project packages:
 
