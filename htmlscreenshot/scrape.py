@@ -17,7 +17,7 @@ WAIT_S = 3
 driver = None
 
 
-def quit():
+def close():
     """
     Close webdriver.
     """

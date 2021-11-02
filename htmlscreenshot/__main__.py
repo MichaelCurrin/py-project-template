@@ -15,7 +15,7 @@ def process(path_str: str) -> None:
         for url in urls:
             scrape.process(url)
     finally:
-        scrape.quit()
+        scrape.close()
 
 
 def main(args: list[str]) -> None:
