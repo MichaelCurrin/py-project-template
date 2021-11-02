@@ -3,6 +3,7 @@ Scrape module.
 
 Importable functions and CLI tool for converting a single URL into an image.
 """
+import datetime
 import sys
 from pathlib import Path
 from time import sleep
@@ -12,7 +13,10 @@ from selenium import webdriver
 from . import lib
 
 OUT_DIR = Path(__file__).parent / "var"
+
 WAIT_S = 3
+DATETIME_FORMAT = "%Y-%m-%d--%H:%m"
+ADD_DATETIME_DEFAULT = True
 
 driver = None
 
@@ -63,16 +67,32 @@ def load(url: str) -> str:
     return title
 
 
-def save(name="test.png") -> None:
+def _make_filename(name: str, add_datetime: bool) -> str:
     """
-    Take a screenshot of the current view and store using given name.
+    Convert an image name into a suitable filename for an image.
     """
-    name = lib.slugify(name)
+    filename = lib.slugify(name)
 
-    if not name.endswith(".png"):
-        name = f"{name}.png"
+    if not filename.endswith(".png"):
+        filename = f"{filename}.png"
 
-    out_path = OUT_DIR / name
+    if add_datetime:
+        now = datetime.datetime.now()
+        dt_str = now.strftime(DATETIME_FORMAT)
+        filename = f"{dt_str}-{filename}"
+
+    return filename
+
+
+def save(name: str, add_datetime: bool) -> None:
+    """
+    Take a screenshot of the current page and save it with the given name.
+
+    The PNG prefix is added here internally because the webdriver requires it.
+    """
+    filename = _make_filename(name, add_datetime)
+
+    out_path = OUT_DIR / filename
     driver.get_screenshot_as_file(str(out_path))
 
 
@@ -81,7 +101,7 @@ def process(url: str) -> None:
     Convert a webpage URL into an image.
     """
     name = load(url)
-    save(name)
+    save(name, ADD_DATETIME_DEFAULT)
 
 
 def main(args: list[str]) -> None:
