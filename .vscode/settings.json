@@ -1,12 +1,12 @@
 {
-    "code-runner.cwd": "htmlscreenshot",
-    "python.defaultInterpreterPath": "venv/bin/python",
+  "code-runner.cwd": "htmlscreenshot",
+  "python.defaultInterpreterPath": "venv/bin/python",
 
-    "editor.rulers": [79],
+  "editor.rulers": [79],
 
-    "python.formatting.provider": "black",
+  "python.formatting.provider": "black",
 
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.flake8Enabled": true
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true
 }
