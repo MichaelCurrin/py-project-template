@@ -1,3 +1,6 @@
+---
+permalink: /
+---
 # Documentation
 
 - [Installation](installation.md)
