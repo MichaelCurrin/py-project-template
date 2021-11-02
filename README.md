@@ -30,7 +30,7 @@ Then find your PNGs in the project's output directory.
 
 <div align="center">
 
-[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/)
+[![view - Documentation](https://img.shields.io/badge/view-Online_Documentation-blue?style=for-the-badge)](https://michaelcurrin.github.io/html-screenshot-py/ "Go to docs site")
 
 </div>
 
