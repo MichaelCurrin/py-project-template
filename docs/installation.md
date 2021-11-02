@@ -1,9 +1,9 @@
-
 # Installation
 
 
 ## Requirements
 
+- [Make](https://www.gnu.org/software/make/) - standard on Linux and macOS. Install on Windows or use the commands in Makefile without `make`.
 - [Python 3](https://www.python.org)
 - Firefox
 - [Geckodriver](https://firefox-source-docs.mozilla.org/testing/geckodriver/index.html)
