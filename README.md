@@ -1,4 +1,4 @@
-# HTML Screenshot PY
+# HTML Screenshot PY 🌐 🖼 🐍
 > CLI tool to take screenshots of given webpages
 
 [![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
