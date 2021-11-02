@@ -83,13 +83,15 @@ $ make pages-help
 
 ### Demo
 
-Run one of the demo tasks.
+Run demo tasks against some fixed URLs that have been configured.
+
+Screenshot one page.
 
 ```sh
 $ make page-demo
 ```
 
-This uses URLs in the [sample.txt](/htmlscreenshot/sample.txt) file.
+Screenshot each page listed in the [sample.txt](/htmlscreenshot/sample.txt) file.
 
 ```sh
 $ make pages-demo
@@ -97,13 +99,13 @@ $ make pages-demo
 
 ### Run
 
-Run against a single URL using the `scrape` module. e.g.
+Screenshot against a single URL using the `scrape` module. e.g.
 
 ```sh
 $ python -m htmlscreenshot.scrape 'https://example.com'
 ```
 
-Run against a text file of URLs using the main module e.g.
+Screenshot against a text file of URLs using the main module e.g.
 
 ```sh
 $ python -m htmlscreenshot ~/path/to/urls.txt
