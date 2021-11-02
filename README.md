@@ -1,5 +1,5 @@
 # HTML Screenshot PY
-> Python web scraper that creates screenshot images for given URLs
+> Python web scraper that creates screenshots for given URLs
 
 [![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org)
 [![dependency - selenium](https://img.shields.io/badge/selenium-3-blue)](https://pypi.org/project/selenium)
@@ -11,11 +11,19 @@ The web is fast-changing - maybe you want to save an article or a design that in
 
 ## Sample
 
+One webpage:
+
 ```sh
 $ python -m htmlscreenshot.scrape 'https://example.com'
 ```
 
-Then find your PNG in the project's output directory.
+Multiple URLs:
+
+```sh
+$ python -m htmlscreenshot ~/path/to/urls.txt
+```
+
+Then find your PNGs in the project's output directory.
 
 
 ## Installation
@@ -89,13 +97,13 @@ $ make pages-demo
 
 ### Run
 
-Run against a single URL. e.g.
+Run against a single URL using the `scrape` module. e.g.
 
 ```sh
 $ python -m htmlscreenshot.scrape 'https://example.com'
 ```
 
-Run against a text file of URLs. e.g.
+Run against a text file of URLs using the main module e.g.
 
 ```sh
 $ python -m htmlscreenshot ~/path/to/urls.txt
