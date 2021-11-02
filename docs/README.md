@@ -1,7 +1,7 @@
 ---
 permalink: /
 ---
-# Documentation
+# Documentation 🌐 🖼 🐍
 
 - [Installation](installation.md)
 - [Usage](usage.md)
