@@ -50,6 +50,9 @@ t typecheck:
 	mypy $(APP_DIR)
 
 
+clean:
+	rm $(APP_DIR)/var/*.png
+
 page-help:
 	@python -m htmlscreenshot.scrape
 
