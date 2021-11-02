@@ -33,14 +33,16 @@ Screenshot each page listed in the [sample.txt](/htmlscreenshot/sample.txt) file
 $ make pages-demo
 ```
 
-See images here created:
+See images here created in the `var` directory:
 
 ```console
 $ ls -1 htmlscreenshot/var
-Michael-Currin.png
-Twitter-It-s-what-s-happening-Twitter.png
-Welcome-to-Python-org.png
+2021-11-02-20:00-Michael-Currin.png
+2021-11-02-20:02-Twitter-It-s-what-s-happening-Twitter.png
+2021-11-02-20:04-Welcome-to-Python-org.png
 ```
+
+Date and time are included so you can do multiple runs and compare results.
 
 
 ## Run
@@ -58,3 +60,12 @@ $ python -m htmlscreenshot ~/path/to/urls.txt
 ```
 
 Where the file is one URL per like, like [sample.txt](/htmlscreenshot/sample.txt).
+
+
+## Clean
+
+Delete all images.
+
+```sh
+$ make clean
+```
