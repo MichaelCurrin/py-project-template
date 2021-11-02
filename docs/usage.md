@@ -1,4 +1,3 @@
-
 # Usage
 
 Generated screenshots will be in the unversioned `htmlscreenshot/var/` directory.
@@ -27,7 +26,7 @@ Screenshot one page.
 $ make page-demo
 ```
 
-Screenshot each page listed in the [sample.txt](/htmlscreenshot/sample.txt) file.
+Screenshot each page listed in the [sample.txt][] file.
 
 ```sh
 $ make pages-demo
@@ -59,7 +58,7 @@ Screenshot against a text file of URLs using the main module e.g.
 $ python -m htmlscreenshot ~/path/to/urls.txt
 ```
 
-Where the file is one URL per like, like [sample.txt](/htmlscreenshot/sample.txt).
+Where the file is one URL per like, like [sample.txt][].
 
 
 ## Clean
@@ -69,3 +68,6 @@ Delete all images.
 ```sh
 $ make clean
 ```
+
+
+[sample.txt]: https://github.com/MichaelCurrin/html-screenshot-py/blob/main/htmlscreenshot/sample.txt
