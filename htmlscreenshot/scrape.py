@@ -18,14 +18,19 @@ driver = None
 
 
 def quit():
+    """
+    Close webdriver.
+    """
     global driver
-
     assert driver, "driver is not defined"
 
     driver.quit()
 
 
 def setup_driver() -> None:
+    """
+    Initialize webdriver.
+    """
     global driver
     driver = webdriver.Firefox()
 
@@ -35,7 +40,7 @@ def setup_driver() -> None:
 
 def load(url: str) -> str:
     """
-    Request a given webpage URL.
+    Request a given webpage URL using the global driver.
 
     :return title: Derived from the title on the page or the URL.
     """
@@ -61,6 +66,9 @@ def load(url: str) -> str:
 
 
 def save(name="test.png") -> None:
+    """
+    Take a screenshot of the current view and store using given name.
+    """
     name = lib.slugify(name)
 
     if not name.endswith(".png"):
@@ -79,6 +87,9 @@ def process(url: str) -> None:
 
 
 def main(args: list[str]) -> None:
+    """
+    Command-line entry-point.
+    """
     if not args:
         print("Required arg: URL")
         sys.exit(0)
