@@ -1,7 +1,8 @@
 ---
 permalink: /
 ---
-# Documentation 🌐 🖼 🐍
+# HTML Screenshot PY docs 🌐 🖼 🐍
+> CLI tool to take screenshots of given webpages
 
 - [Installation](installation.md)
 - [Usage](usage.md)
