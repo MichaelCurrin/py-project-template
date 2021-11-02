@@ -53,12 +53,11 @@ t typecheck:
 page-help:
 	@python -m htmlscreenshot.scrape
 
-page-demo:
-	python -m htmlscreenshot.scrape 'https://www.python.org'
-
-
 pages-help:
 	@python -m htmlscreenshot
+
+page-demo:
+	python -m htmlscreenshot.scrape 'https://www.python.org'
 
 pages-demo:
 	python -m htmlscreenshot "$(APP_DIR)/sample.txt"
