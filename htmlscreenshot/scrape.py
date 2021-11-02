@@ -21,7 +21,6 @@ def close():
     """
     Close webdriver.
     """
-    global driver
     assert driver, "driver is not defined"
 
     driver.quit()
@@ -48,7 +47,6 @@ def load(url: str) -> str:
     assert url.startswith("http"), f"URL must start with http(s) - got: {url}"
 
     driver.get(url)
-
     sleep(WAIT_S)
 
     driver.find_element_by_tag_name("title")
