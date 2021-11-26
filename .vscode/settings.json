@@ -4,7 +4,7 @@
     // "terminal.integrated.cwd": "pyproject",
     "code-runner.cwd": "pyproject",
 
-    "python.pythonPath": "venv/bin/python",
+    "python.defaultInterpreterPath": "venv/bin/python",
 
     "editor.rulers": [79],
 
