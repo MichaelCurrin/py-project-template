@@ -28,12 +28,6 @@
 See the [Template Notes](/docs/template-notes/) part of the docs for more info.
 
 
-## Related projects
-
-- [Python app](https://github.com/MichaelCurrin/docker-quickstarts/tree/master/examples/python_app) in Docker Quickstarts repo - if you're interested in running in a container.
-- [Python Package Quickstart](https://michaelcurrin.github.io/python-package-quickstart/) to make a package that can be installed with `pip`p.
-
-
 ## Documentation
 > How to install and run this project
 
