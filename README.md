@@ -28,6 +28,29 @@
 See the [Template Notes](/docs/template-notes/) part of the docs for more info.
 
 
+## Sample usage
+
+_TODO: Add just a few lines to show how to use your application. Such as a Python or shell snippet._`
+
+```sh
+$ pip install foo-bar
+$ foo-bar --help
+```
+
+```sh
+$ make install
+$ make run
+```
+
+
+```python
+import foo
+
+foo.bar(123)
+```
+
+
+
 ## Documentation
 > How to install and run this project
 
