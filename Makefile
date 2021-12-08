@@ -53,6 +53,7 @@ t typecheck:
 clean:
 	rm $(APP_DIR)/var/*.png
 
+
 page-help:
 	@python -m htmlscreenshot.scrape
 
@@ -64,3 +65,10 @@ page-demo:
 
 pages-demo:
 	python -m htmlscreenshot "$(APP_DIR)/sample.txt"
+
+pdf-demo:
+	python -m htmlscreenshot.download 'http://ciir.cs.umass.edu/downloads/SEIRiP.pdf'
+
+
+run:
+	python -m htmlscreenshot "$(APP_DIR)/var/input.txt"
