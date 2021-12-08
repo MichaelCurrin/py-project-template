@@ -4,3 +4,5 @@ venv
 
 geckodriver.log
 htmlscreenshot/var/*.png
+
+htmlscreenshot/var/
