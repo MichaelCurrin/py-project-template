@@ -3,7 +3,7 @@ HTML Screenshot application.
 """
 import sys
 
-from . import lib, scrape
+from . import download, lib, scrape
 
 
 def process(path_str: str) -> None:
@@ -19,7 +19,10 @@ def process(path_str: str) -> None:
 
     try:
         for url in urls:
-            scrape.process(url)
+            if url.endswith(".pdf"):
+                download.download_binary(url)
+            else:
+                scrape.process(url)
     finally:
         scrape.close()
 
