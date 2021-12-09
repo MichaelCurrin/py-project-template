@@ -23,7 +23,8 @@ install:
 
 install-dev:
 	pip install -r requirements-dev.txt
-
+	mypy --install-types
+	
 upgrade:
 	pip install pip --upgrade
 	pip install -r requirements.txt --upgrade
@@ -39,7 +40,6 @@ fmt-check:
 	isort . --diff --check-only
 
 pylint:
-	# Exit on fatal error code.
 	source .env \
 		&& pylint $(APP_DIR) \
 		|| pylint-exit $$?
