@@ -62,31 +62,40 @@ def load(url: str) -> str:
     return title
 
 
-def screenshot_to_file(name: str, add_datetime: bool) -> None:
+def save_screenshot(name: str, fullpage: bool, add_datetime: bool) -> None:
     """
-    Take a fullpage screenshot of the current page and save it with the given
-    name.
+    Take a screenshot of the current view and save it based on the given name.
 
-    The PNG prefix will be added here internally because the webdriver requires
-    it.
+    :param name: A readable name like the title, or the the URL. This will be
+        be converted into suitable filename.
+        The PNG suffix for you if missing, as the webdriver requires it.
+    :param fullpage: If True, take a fullpage screenshot, other just save
+        the top of the page.
+    :param add_datetime: If True, add datetime to the output name.
     """
-    filename = lib.make_filename(name, ".png", add_datetime)
+    if fullpage:
+        name = f"{name}--FULL"
 
-    out_path = PDF_DIR / filename
+    slug_filename = lib.make_filename(name, ".png", add_datetime)
+    out_path = PDF_DIR / slug_filename
+    out_path_str = str(out_path)
 
-    el = driver.find_element_by_tag_name("body")
-    result_ok = el.screenshot(str(out_path))
+    if fullpage:
+        body_el = driver.find_element_by_tag_name("body")
+        result_ok = body_el.screenshot(out_path_str)
+    else:
+        result_ok = driver.save_screenshot(out_path_str)
 
     if result_ok is False:
         raise ValueError(f"IO error on current page - name: {name}")
 
 
-def process(url: str) -> None:
+def process(url: str, fullpage: bool) -> None:
     """
     Convert a webpage URL into an image.
     """
     name = load(url)
-    screenshot_to_file(name, ADD_DATETIME_DEFAULT)
+    save_screenshot(name, fullpage, ADD_DATETIME_DEFAULT)
 
 
 def main(args: list[str]) -> None:
