@@ -24,7 +24,8 @@ def process(path_str: str) -> None:
             if url.endswith(".pdf"):
                 download.download_binary(url)
             else:
-                scrape.process(url)
+                scrape.process(url, fullpage=True)
+                scrape.process(url, fullpage=False)
         except Exception as e:
             errors.append(f"{url} - {str(e)}")
 
