@@ -33,7 +33,7 @@ def download_binary(url: str) -> None:
     """
     Fetch and download binary data at URL.
     """
-    print(f"Downloading: {url}")
+    print(f"Downloading binary content: {url}")
     content = fetch(url)
 
     slug_filename = lib.make_filename(url, ".pdf", ADD_DATETIME_DEFAULT)

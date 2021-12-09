@@ -42,7 +42,7 @@ def load(url: str) -> str:
 
     :return title: Derived from the title on the page or the URL.
     """
-    print(f"Requesting {url}")
+    print(f"Requesting with browser: {url}")
     assert url.startswith("http"), f"URL must start with http(s) - got: {url}"
 
     driver.get(url)
