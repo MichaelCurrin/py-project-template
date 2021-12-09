@@ -40,7 +40,6 @@ fmt-check:
 	isort . --diff --check-only
 
 pylint:
-	# Exit on fatal error code.
 	source .env \
 		&& pylint $(APP_DIR) \
 		|| pylint-exit $$?
