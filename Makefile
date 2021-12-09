@@ -2,13 +2,18 @@ SHELL = /bin/bash
 APP_DIR = htmlscreenshot
 
 
-all: install install-dev fix typecheck
-
 default: install install-dev
+
+all: hooks install install-dev fix typecheck
+
 
 h help:
 	@grep '^[a-z]' Makefile
 
+
+.PHONY: hooks
+hooks:
+	cd .git/hooks && ln -s -f ../../hooks/pre-push pre-push
 
 install:
 	pip install pip --upgrade
