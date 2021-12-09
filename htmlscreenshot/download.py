@@ -16,9 +16,9 @@ def fetch(url: str) -> bytes:
     """
     Request a page URL and get the response content in bytes.
 
-    The stream param is not strictly needed to handle a PDF or similar binary
-    files, as it works without it, but it was recommended in a thread as is
-    kept, possibly for performance.
+    The stream param is not strictly needed to handle a PDF as it works without
+    it, but it was recommended in a thread. The param sets a header so that
+    response comes in chunks.
 
     :raises: HTTPError for 4xx or 5xx response.
     """
