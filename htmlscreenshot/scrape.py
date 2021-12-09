@@ -79,7 +79,8 @@ def save_screenshot(name: str, fullpage: bool, add_datetime: bool) -> None:
     result_ok = driver.save_screenshot(str(out_path))
 
     if fullpage:
-        slug_filename = lib.make_filename(f"{name}--FULL", ".png", add_datetime)
+        fullpage_name = f"{name}--FULL"
+        slug_filename = lib.make_filename(fullpage_name, ".png", add_datetime)
         out_path = PDF_DIR / slug_filename
 
         body_el = driver.find_element_by_tag_name("body")
