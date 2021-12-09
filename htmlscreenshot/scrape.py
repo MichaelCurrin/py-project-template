@@ -11,6 +11,7 @@ from selenium import webdriver
 from . import lib
 from .lib import ADD_DATETIME_DEFAULT, PDF_DIR
 
+
 WAIT_S = 3
 
 driver = None

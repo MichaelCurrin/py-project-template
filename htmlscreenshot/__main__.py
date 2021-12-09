@@ -12,7 +12,12 @@ def is_binary_data(url) -> bool:
     """
     url = url.lower()
 
-    return url.endswith(".pdf") or url.endswith(".png") or url.endswith(".jpeg") or url.endswith(".jpg")
+    return (
+        url.endswith(".pdf")
+        or url.endswith(".png")
+        or url.endswith(".jpeg")
+        or url.endswith(".jpg")
+    )
 
 
 def handle_errors(errors: list[str]) -> None:

@@ -5,6 +5,7 @@ import datetime
 import re
 from pathlib import Path
 
+
 VAR_DIR = Path(__file__).parent / "var"
 PDF_DIR = VAR_DIR / "pdf"
 PNG_DIR = VAR_DIR / "png"
