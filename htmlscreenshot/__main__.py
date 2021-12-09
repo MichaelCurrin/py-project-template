@@ -17,14 +17,26 @@ def process(path_str: str) -> None:
 
     scrape.setup_driver()
 
-    try:
-        for url in urls:
+    errors = []
+
+    for url in urls:
+        try:
             if url.endswith(".pdf"):
                 download.download_binary(url)
             else:
                 scrape.process(url)
-    finally:
-        scrape.close()
+        except Exception as e:
+            errors.append(f"{url} - {str(e)}")
+
+    scrape.close()
+
+    if errors:
+        for msg in errors:
+            print(msg)
+        print()
+
+        print(f"{len(errors)} errors")
+        sys.exit(1)
 
 
 def main(args: list[str]) -> None:
