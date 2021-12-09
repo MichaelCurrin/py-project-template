@@ -62,11 +62,12 @@ def load(url: str) -> str:
     return title
 
 
-def save(name: str, add_datetime: bool) -> None:
+def screenshot_to_file(name: str, add_datetime: bool) -> None:
     """
     Take a screenshot of the current page and save it with the given name.
 
-    The PNG prefix is added here internally because the webdriver requires it.
+    The PNG prefix will be added here internally because the webdriver requires
+    it.
     """
     filename = lib.make_filename(name, ".png", add_datetime)
 
@@ -79,7 +80,7 @@ def process(url: str) -> None:
     Convert a webpage URL into an image.
     """
     name = load(url)
-    save(name, ADD_DATETIME_DEFAULT)
+    screenshot_to_file(name, ADD_DATETIME_DEFAULT)
 
 
 def main(args: list[str]) -> None:
