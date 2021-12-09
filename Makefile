@@ -14,6 +14,9 @@ install:
 
 install-dev:
 	pip install -r requirements-dev.txt
+	# For types-requests, but nothing for selenium available.
+	mypy --install-types
+
 
 upgrade:
 	pip install pip --upgrade
