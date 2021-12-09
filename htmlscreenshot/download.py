@@ -12,15 +12,19 @@ from . import lib
 from .lib import ADD_DATETIME_DEFAULT, PNG_DIR
 
 
-def fetch(url):
+def fetch(url: str) -> bytes:
     """
-    Get content of URL.
+    Request a page URL and get the response content in bytes.
 
     The stream param is not strictly needed to handle a PDF or similar binary
     files, as it works without it, but it was recommended in a thread as is
     kept, possibly for performance.
+
+    :raises: HTTPError for 4xx or 5xx response.
     """
     resp = requests.get(url, stream=True)
+
+    resp.raise_for_status()
 
     return resp.content
 

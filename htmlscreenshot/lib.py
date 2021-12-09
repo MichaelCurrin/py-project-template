@@ -11,7 +11,7 @@ PNG_DIR = VAR_DIR / "png"
 
 SLUG_PATTERN = re.compile(r"[\W_]+")
 
-ADD_DATETIME_DEFAULT = True
+ADD_DATETIME_DEFAULT = False
 DATETIME_FORMAT = "%Y-%m-%d--%H:%m"
 
 
@@ -30,7 +30,7 @@ def read(path_str: str) -> list[str]:
     return urls
 
 
-def write(path_str: str, output: str) -> None:
+def write(path_str: str, output: bytes) -> None:
     """
     Write given binary data to a file.
 
