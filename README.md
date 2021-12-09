@@ -1,5 +1,5 @@
 # HTML Screenshot PY 🌐 🖼 🐍
-> CLI tool to take screenshots of given webpages
+> Take fullpage screenshots for a batch of URLs with this easy CLI tool
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/html-screenshot-py?include_prereleases=&sort=semver&color=blue)](https://github.com/MichaelCurrin/html-screenshot-py/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
@@ -11,12 +11,12 @@
 
 ## About
 
-An easy Python CLI tool. Provide your URLs for webpages to scrape, whether for your own sites or by someone else. 
+An easy Python CLI tool. Provide it a batch of one or more URLs as webpages to scrape. Whether for your own sites or by someone else. 
 
-It supports to formats:
+It uses two approaches, depending on the format:
 
 - HTML pages - The tool will go through each to load the page, take a screenshot of the _entire_ page and save it a PNG file.
-- PDF pages - For files ending in `.pdf`, the file will be downloaded as as `.pdf` file (for speed and reliability) instead of trying to take a screenshot (which could be massive for PDFs with many pages).
+- Binary data - For files with a PDF or image extension, the file will be downloaded directly (for speed and reliability) instead of trying to take a screenshot (which could be massive for PDFs with many pages).
 
 Use-cases:
 
