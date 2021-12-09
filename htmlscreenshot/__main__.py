@@ -5,16 +5,17 @@ import sys
 
 from . import download, lib, scrape
 
+
 def is_binary_data(url) -> bool:
     """
     Determine whether the URL is for a page of plain HTML or binary data.
     """
     url = url.lower()
-    
+
     return url.endswith(".pdf") or url.endswith(".png") or url.endswith(".jpeg") or url.endswith(".jpg")
 
 
-def handle_errors(errors: list[str]):
+def handle_errors(errors: list[str]) -> None:
     """
     Log errors if any.
     """
@@ -23,7 +24,7 @@ def handle_errors(errors: list[str]):
             print(f"{i+1} {error_msg}")
 
         sys.exit(1)
-        
+
 
 def process(path_str: str) -> None:
     """
@@ -32,10 +33,10 @@ def process(path_str: str) -> None:
     urls = lib.read(path_str)
 
     print(f"Found URLs: {len(urls)}")
-    
+
     scrape.setup_driver()
     errors = []
-    
+
     for url in urls:
         try:
             if is_binary_data(url):
@@ -57,7 +58,7 @@ def main(args: list[str]) -> None:
     if not args:
         print("Required arg: PATH")
         print("Provide a path to a text file of one URL per line")
-        
+
         sys.exit(0)
 
     path_str = args.pop(0)
