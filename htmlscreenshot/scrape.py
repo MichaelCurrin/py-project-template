@@ -72,7 +72,11 @@ def screenshot_to_file(name: str, add_datetime: bool) -> None:
     filename = lib.make_filename(name, ".png", add_datetime)
 
     out_path = PDF_DIR / filename
-    driver.get_screenshot_as_file(str(out_path))
+
+    result_ok = driver.get_screenshot_as_file(str(out_path))
+
+    if result_ok is False:
+        raise ValueError(f"IO error on current page - name: {name}")
 
 
 def process(url: str) -> None:
