@@ -64,7 +64,8 @@ def load(url: str) -> str:
 
 def screenshot_to_file(name: str, add_datetime: bool) -> None:
     """
-    Take a screenshot of the current page and save it with the given name.
+    Take a fullpage screenshot of the current page and save it with the given
+    name.
 
     The PNG prefix will be added here internally because the webdriver requires
     it.
@@ -73,7 +74,8 @@ def screenshot_to_file(name: str, add_datetime: bool) -> None:
 
     out_path = PDF_DIR / filename
 
-    result_ok = driver.get_screenshot_as_file(str(out_path))
+    el = driver.find_element_by_tag_name("body")
+    result_ok = el.screenshot(str(out_path))
 
     if result_ok is False:
         raise ValueError(f"IO error on current page - name: {name}")
