@@ -23,7 +23,6 @@ install:
 
 install-dev:
 	pip install -r requirements-dev.txt
-	mypy --install-types
 	
 upgrade:
 	pip install pip --upgrade
