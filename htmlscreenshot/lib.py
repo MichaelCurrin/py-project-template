@@ -30,14 +30,12 @@ def read(path_str: str) -> list[str]:
     return urls
 
 
-def write(path_str: str, output: bytes) -> None:
+def write(path: Path, output: bytes) -> None:
     """
     Write given binary data to a file.
 
     e.g. Write a PDF file.
     """
-    path = Path(path_str)
-
     with open(path, "wb") as f_out:
         f_out.write(output)
 
