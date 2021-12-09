@@ -5,6 +5,14 @@ import sys
 
 from . import download, lib, scrape
 
+def is_binary_data(url) -> bool:
+    """
+    Determine whether the URL is for a page of plain HTML or binary data.
+    """
+    url = url.lower()
+    
+    return url.endswith(".pdf") or url.endswith(".png") or url.endswith(".jpeg") or url.endswith(".jpg")
+
 
 def process(path_str: str) -> None:
     """
@@ -13,7 +21,6 @@ def process(path_str: str) -> None:
     urls = lib.read(path_str)
 
     print(f"Found URLs: {len(urls)}")
-    print(urls)
 
     scrape.setup_driver()
 
@@ -21,7 +28,7 @@ def process(path_str: str) -> None:
 
     for url in urls:
         try:
-            if url.endswith(".pdf"):
+            if is_binary_data(url):
                 download.download_binary(url)
             else:
                 scrape.process(url, fullpage=True)
@@ -35,7 +42,6 @@ def process(path_str: str) -> None:
             print(msg)
         print()
 
-        print(f"{len(errors)} errors")
         sys.exit(1)
 
 
