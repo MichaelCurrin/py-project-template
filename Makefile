@@ -60,6 +60,10 @@ page-help:
 pages-help:
 	@python -m htmlscreenshot
 
+pdf-help:
+	@python -m htmlscreenshot.download
+
+
 page-demo:
 	python -m htmlscreenshot.scrape 'https://www.python.org'
 
