@@ -9,7 +9,7 @@ from time import sleep
 from selenium import webdriver
 
 from . import lib
-from .lib import ADD_DATETIME_DEFAULT, DATETIME_FORMAT, OUT_DIR
+from .lib import ADD_DATETIME_DEFAULT, PDF_DIR
 
 WAIT_S = 3
 
@@ -70,7 +70,7 @@ def save(name: str, add_datetime: bool) -> None:
     """
     filename = lib.make_filename(name, ".png", add_datetime)
 
-    out_path = OUT_DIR / filename
+    out_path = PDF_DIR / filename
     driver.get_screenshot_as_file(str(out_path))
 
 

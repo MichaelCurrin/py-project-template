@@ -5,8 +5,12 @@ import datetime
 import re
 from pathlib import Path
 
-OUT_DIR = Path(__file__).parent / "var"
-PATTERN = re.compile(r"[\W_]+")
+VAR_DIR = Path(__file__).parent / "var"
+PDF_DIR = VAR_DIR / "pdf"
+PNG_DIR = VAR_DIR / "png"
+
+SLUG_PATTERN = re.compile(r"[\W_]+")
+
 ADD_DATETIME_DEFAULT = True
 DATETIME_FORMAT = "%Y-%m-%d--%H:%m"
 
@@ -28,7 +32,7 @@ def read(path_str: str) -> list[str]:
 
 def write(path_str: str, output: str) -> None:
     """
-    Write given bytes to a file.
+    Write given binary data to a file.
 
     e.g. Write a PDF file.
     """
@@ -46,7 +50,7 @@ def slugify(value: str) -> str:
     """
     value = value.encode("ascii", errors="replace").decode()
 
-    return PATTERN.sub("-", value)
+    return SLUG_PATTERN.sub("-", value)
 
 
 def make_filename(name: str, ext: str, add_datetime: bool) -> str:
@@ -61,6 +65,6 @@ def make_filename(name: str, ext: str, add_datetime: bool) -> str:
     if add_datetime:
         now = datetime.datetime.now()
         dt_str = now.strftime(DATETIME_FORMAT)
-        filename = f"{dt_str}-{filename}"
+        filename = f"{dt_str}--{filename}"
 
     return filename
