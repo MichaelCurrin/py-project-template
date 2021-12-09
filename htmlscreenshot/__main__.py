@@ -14,6 +14,17 @@ def is_binary_data(url) -> bool:
     return url.endswith(".pdf") or url.endswith(".png") or url.endswith(".jpeg") or url.endswith(".jpg")
 
 
+def handle_errors(errors: list[str]):
+    """
+    Log errors if any.
+    """
+    if errors:
+        for i, error_msg in enumerate(errors):
+            print(f"{i+1} {error_msg}")
+
+        sys.exit(1)
+        
+
 def process(path_str: str) -> None:
     """
     Scrape all URLs for given text file path.
@@ -21,11 +32,10 @@ def process(path_str: str) -> None:
     urls = lib.read(path_str)
 
     print(f"Found URLs: {len(urls)}")
-
+    
     scrape.setup_driver()
-
     errors = []
-
+    
     for url in urls:
         try:
             if is_binary_data(url):
@@ -33,16 +43,11 @@ def process(path_str: str) -> None:
             else:
                 scrape.process(url, fullpage=True)
         except Exception as e:
-            errors.append(f"{url} - {str(e)}")
+            error_msg = f"{url} - {str(e)}"
+            errors.append(error_msg)
 
     scrape.close()
-
-    if errors:
-        for msg in errors:
-            print(msg)
-        print()
-
-        sys.exit(1)
+    handle_errors(errors)
 
 
 def main(args: list[str]) -> None:
@@ -52,6 +57,7 @@ def main(args: list[str]) -> None:
     if not args:
         print("Required arg: PATH")
         print("Provide a path to a text file of one URL per line")
+        
         sys.exit(0)
 
     path_str = args.pop(0)
