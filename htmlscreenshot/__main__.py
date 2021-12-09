@@ -25,7 +25,6 @@ def process(path_str: str) -> None:
                 download.download_binary(url)
             else:
                 scrape.process(url, fullpage=True)
-                scrape.process(url, fullpage=False)
         except Exception as e:
             errors.append(f"{url} - {str(e)}")
 

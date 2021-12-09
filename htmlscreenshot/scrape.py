@@ -69,22 +69,21 @@ def save_screenshot(name: str, fullpage: bool, add_datetime: bool) -> None:
     :param name: A readable name like the title, or the the URL. This will be
         be converted into suitable filename.
         The PNG suffix for you if missing, as the webdriver requires it.
-    :param fullpage: If True, take a fullpage screenshot, other just save
-        the top of the page.
+    :param fullpage: If True, take a fullpage screenshot as a separate image,
+        in addition to always doing the partial screenshot.
     :param add_datetime: If True, add datetime to the output name.
     """
-    if fullpage:
-        name = f"{name}--FULL"
-
     slug_filename = lib.make_filename(name, ".png", add_datetime)
     out_path = PDF_DIR / slug_filename
-    out_path_str = str(out_path)
+
+    result_ok = driver.save_screenshot(str(out_path))
 
     if fullpage:
+        slug_filename = lib.make_filename(f"{name}--FULL", ".png", add_datetime)
+        out_path = PDF_DIR / slug_filename
+
         body_el = driver.find_element_by_tag_name("body")
-        result_ok = body_el.screenshot(out_path_str)
-    else:
-        result_ok = driver.save_screenshot(out_path_str)
+        result_ok = body_el.screenshot(str(out_path))
 
     if result_ok is False:
         raise ValueError(f"IO error on current page - name: {name}")
@@ -114,7 +113,6 @@ def main(args: list[str]) -> None:
 
     try:
         process(url, fullpage=True)
-        process(url, fullpage=False)
     finally:
         driver.quit()
 
