@@ -36,8 +36,8 @@ def download_binary(url: str) -> None:
     print(f"Downloading: {url}")
     content = fetch(url)
 
-    out_name = lib.make_filename(url, ".pdf", ADD_DATETIME_DEFAULT)
-    out_path = PNG_DIR / out_name
+    slug_filename = lib.make_filename(url, ".pdf", ADD_DATETIME_DEFAULT)
+    out_path = PNG_DIR / slug_filename
 
     lib.write(out_path, content)
 
