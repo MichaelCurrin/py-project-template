@@ -101,6 +101,8 @@ def process(url: str, fullpage: bool) -> None:
 def main(args: list[str]) -> None:
     """
     Command-line entry-point.
+
+    TODO: Make fullpage configurable.
     """
     if not args:
         print("Required arg: URL")
@@ -111,7 +113,8 @@ def main(args: list[str]) -> None:
     url = args.pop(0)
 
     try:
-        process(url)
+        process(url, fullpage=True)
+        process(url, fullpage=False)
     finally:
         driver.quit()
 
