@@ -2,6 +2,8 @@ SHELL = /bin/bash
 APP_DIR = htmlscreenshot
 
 
+all: install install-dev fix typecheck
+
 default: install install-dev
 
 h help:
@@ -75,6 +77,8 @@ pages-demo:
 
 pdf-demo:
 	python -m htmlscreenshot.download 'http://ciir.cs.umass.edu/downloads/SEIRiP.pdf'
+
+demos: page-demo pages-demo pdf-demo
 
 
 run:
