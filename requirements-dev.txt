@@ -10,3 +10,4 @@ mypy>=0.800
 pytest>=6.2
 
 types-requests>=2.26.1
+types-selenium>=3.141.4
