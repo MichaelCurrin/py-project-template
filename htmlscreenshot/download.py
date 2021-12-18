@@ -13,6 +13,9 @@ from . import lib
 from .lib import ADD_DATETIME_DEFAULT, PNG_DIR
 
 
+EXT = "pdf"
+
+
 def fetch(url: str) -> bytes:
     """
     Request a page URL and get the response content in bytes.
@@ -47,7 +50,7 @@ def download_binary(url: str) -> None:
     print(f"Downloading binary content: {url}")
     content = fetch(url)
 
-    slug_filename = lib.make_filename(url, ".pdf", ADD_DATETIME_DEFAULT)
+    slug_filename = lib.make_filename(url, EXT, ADD_DATETIME_DEFAULT)
     out_path = PNG_DIR / slug_filename
 
     write_binary(out_path, content)

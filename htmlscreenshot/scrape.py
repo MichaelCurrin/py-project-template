@@ -12,6 +12,7 @@ from . import lib
 from .lib import ADD_DATETIME_DEFAULT, PDF_DIR
 
 
+EXT = "png"
 WAIT_S = 3
 
 driver = None
@@ -74,14 +75,14 @@ def save_screenshot(name: str, fullpage: bool, add_datetime: bool) -> None:
         in addition to always doing the partial screenshot.
     :param add_datetime: If True, add datetime to the output name.
     """
-    slug_filename = lib.make_filename(name, ".png", add_datetime)
+    slug_filename = lib.make_filename(name, EXT, add_datetime)
     out_path = PDF_DIR / slug_filename
 
     result_ok = driver.save_screenshot(str(out_path))
 
     if fullpage:
         fullpage_name = f"{name}--FULL"
-        slug_filename = lib.make_filename(fullpage_name, ".png", add_datetime)
+        slug_filename = lib.make_filename(fullpage_name, EXT, add_datetime)
         out_path = PDF_DIR / slug_filename
 
         body_el = driver.find_element_by_tag_name("body")

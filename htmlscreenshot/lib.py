@@ -47,11 +47,16 @@ def slugify(value: str) -> str:
 def make_filename(name: str, ext: str, add_datetime: bool) -> str:
     """
     Convert a readable name into a suitable filename for output.
+
+    :param name: Name of file.
+    :param ext: Extension without dot. e.g. 'png'.
+    :param add_datetime: If True, add the current date and tiem to the start
+        of the filename.
     """
     filename = slugify(name)
 
     if not filename.endswith(ext):
-        filename = f"{filename}{ext}"
+        filename = f"{filename}.{ext}"
 
     if add_datetime:
         now = datetime.datetime.now()
