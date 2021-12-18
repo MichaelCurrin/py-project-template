@@ -35,11 +35,13 @@ def slugify(value: str) -> str:
     """
     Convert value to a slug - safe for URLs and filenames.
 
-    Strips out any non-ASCII characters.
+    Non-ASCII characters and symbols are replaced, so the result is only basic
+    alphanumeric and hyphens.
     """
     value = value.encode("ascii", errors="replace").decode()
+    value = SLUG_PATTERN.sub("-", value)
 
-    return SLUG_PATTERN.sub("-", value)
+    return value.strip("-")
 
 
 def make_filename(name: str, ext: str, add_datetime: bool) -> str:
