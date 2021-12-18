@@ -32,7 +32,7 @@ def setup_driver() -> None:
     """
     Initialize webdriver.
     """
-    global driver
+    global driver  # pylint: disable=global-statement
     driver = webdriver.Firefox()
 
     # This should help on waiting for element.
