@@ -13,7 +13,7 @@ from . import lib
 from .lib import ADD_DATETIME_DEFAULT, PDF_DIR
 
 
-EXT = "pdf"
+EXT = ".pdf"
 
 
 def fetch(url: str) -> bytes:

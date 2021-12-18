@@ -12,7 +12,7 @@ from . import lib
 from .lib import ADD_DATETIME_DEFAULT, PNG_DIR
 
 
-EXT = "png"
+EXT = ".png"
 FULL_SUFFIX = "FULL"
 WAIT_S = 3
 

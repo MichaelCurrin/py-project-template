@@ -51,7 +51,7 @@ def make_filename(name: str, ext: str, add_datetime: bool) -> str:
 
     :param name: Name of file. This will be shortened if needed, to avoid
         getting an error on writing and for readability.
-    :param ext: Extension without dot. e.g. 'png'.
+    :param ext: Extension without dot. e.g. '.png'.
     :param add_datetime: If True, add the current date and tiem to the start
         of the filename.
     """
@@ -60,7 +60,7 @@ def make_filename(name: str, ext: str, add_datetime: bool) -> str:
     filename = filename[:FILENAME_MAX_LENGTH]
 
     if not filename.endswith(ext):
-        filename = f"{filename}.{ext}"
+        filename = f"{filename}{ext}"
 
     if add_datetime:
         now = datetime.datetime.now()
