@@ -14,6 +14,7 @@ SLUG_PATTERN = re.compile(r"[\W_]+")
 
 ADD_DATETIME_DEFAULT = False
 DATETIME_FORMAT = "%Y-%m-%d--%H:%m"
+FILENAME_MAX_LENGTH = 100
 
 
 def read_text(path_str: str) -> list[str]:
@@ -48,12 +49,15 @@ def make_filename(name: str, ext: str, add_datetime: bool) -> str:
     """
     Convert a readable name into a suitable filename for output.
 
-    :param name: Name of file.
+    :param name: Name of file. This will be shortened if needed, to avoid
+        getting an error on writing and for readability.
     :param ext: Extension without dot. e.g. 'png'.
     :param add_datetime: If True, add the current date and tiem to the start
         of the filename.
     """
     filename = slugify(name)
+
+    filename = filename[:FILENAME_MAX_LENGTH]
 
     if not filename.endswith(ext):
         filename = f"{filename}.{ext}"
