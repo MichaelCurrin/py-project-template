@@ -16,7 +16,7 @@ ADD_DATETIME_DEFAULT = False
 DATETIME_FORMAT = "%Y-%m-%d--%H:%m"
 
 
-def read(path_str: str) -> list[str]:
+def read_text(path_str: str) -> list[str]:
     """
     Return the lines of a given text file.
     """

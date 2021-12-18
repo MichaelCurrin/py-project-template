@@ -35,7 +35,7 @@ def process(path_str: str) -> None:
     """
     Scrape all URLs for given text file path.
     """
-    urls = lib.read(path_str)
+    urls = lib.read_text(path_str)
 
     print(f"Found URLs: {len(urls)}")
 
