@@ -31,6 +31,16 @@ def handle_errors(errors: list[str]) -> None:
         sys.exit(1)
 
 
+def process_url(url: str) -> None:
+    """
+    Scrape data at a given URL, whether binary or HTML.
+    """
+    if is_binary_data(url):
+        download.download_binary(url)
+    else:
+        scrape.process_page(url, fullpage=True)
+
+
 def process_urls(path_str: str) -> None:
     """
     Scrape all URLs for given text file path.
@@ -44,10 +54,7 @@ def process_urls(path_str: str) -> None:
 
     for url in urls:
         try:
-            if is_binary_data(url):
-                download.download_binary(url)
-            else:
-                scrape.process_page(url, fullpage=True)
+            process_url(url)
         except Exception as e:
             error_msg = f"{url} - {str(e)}"
             errors.append(error_msg)
