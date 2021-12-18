@@ -31,7 +31,7 @@ def read(path_str: str) -> list[str]:
     return urls
 
 
-def write(path: Path, content: bytes) -> None:
+def write_binary(path: Path, content: bytes) -> None:
     """
     Write given binary data to a file.
 
