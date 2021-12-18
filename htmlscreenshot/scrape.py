@@ -37,7 +37,7 @@ def setup_driver() -> None:
     driver.implicitly_wait(WAIT_S)
 
 
-def load(url: str) -> str:
+def load_page(url: str) -> str:
     """
     Request a given webpage URL using the global driver.
 
@@ -95,7 +95,7 @@ def process(url: str, fullpage: bool) -> None:
     """
     Convert a webpage URL into an image.
     """
-    name = load(url)
+    name = load_page(url)
     save_screenshot(name, fullpage, ADD_DATETIME_DEFAULT)
 
 
