@@ -10,7 +10,7 @@ from pathlib import Path
 import requests
 
 from . import lib
-from .lib import ADD_DATETIME_DEFAULT, PNG_DIR
+from .lib import ADD_DATETIME_DEFAULT, PDF_DIR
 
 
 EXT = "pdf"
@@ -51,7 +51,7 @@ def download_binary(url: str) -> None:
     content = fetch(url)
 
     slug_filename = lib.make_filename(url, EXT, ADD_DATETIME_DEFAULT)
-    out_path = PNG_DIR / slug_filename
+    out_path = PDF_DIR / slug_filename
 
     write_binary(out_path, content)
 
