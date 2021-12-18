@@ -13,6 +13,7 @@ from .lib import ADD_DATETIME_DEFAULT, PDF_DIR
 
 
 EXT = "png"
+FULL_SUFFIX = "FULL"
 WAIT_S = 3
 
 driver = None
@@ -81,7 +82,7 @@ def save_screenshot(name: str, fullpage: bool, add_datetime: bool) -> None:
     result_ok = driver.save_screenshot(str(out_path))
 
     if fullpage:
-        fullpage_name = f"{name}--FULL"
+        fullpage_name = f"{name}--{FULL_SUFFIX}"
         slug_filename = lib.make_filename(fullpage_name, EXT, add_datetime)
         out_path = PDF_DIR / slug_filename
 
