@@ -25,8 +25,10 @@ def handle_errors(errors: list[str]) -> None:
     Log errors if any.
     """
     if errors:
+        print("\nERRORS")
+
         for i, error_msg in enumerate(errors):
-            print(f"{i+1} {error_msg}")
+            print(f"  - {i+1}. {error_msg}")
 
         sys.exit(1)
 
