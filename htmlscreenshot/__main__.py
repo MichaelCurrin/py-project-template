@@ -73,8 +73,8 @@ def main(args: list[str]) -> None:
 
         sys.exit(0)
 
-    path_str = args.pop(0)
-    process_urls(path_str)
+    input_path_str = args.pop(0)
+    process_urls(input_path_str)
 
 
 if __name__ == "__main__":
