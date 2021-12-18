@@ -82,7 +82,7 @@ def save_screenshot(name: str, fullpage: bool, add_datetime: bool) -> None:
     result_ok = driver.save_screenshot(str(out_path))
 
     if fullpage:
-        fullpage_name = f"{name}--{FULL_SUFFIX}"
+        fullpage_name = f"{name}-{FULL_SUFFIX}"
         slug_filename = lib.make_filename(fullpage_name, EXT, add_datetime)
         out_path = PNG_DIR / slug_filename
 
