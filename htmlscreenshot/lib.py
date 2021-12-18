@@ -31,14 +31,14 @@ def read(path_str: str) -> list[str]:
     return urls
 
 
-def write(path: Path, output: bytes) -> None:
+def write(path: Path, content: bytes) -> None:
     """
     Write given binary data to a file.
 
     e.g. Write a PDF file.
     """
     with open(path, "wb") as f_out:
-        f_out.write(output)
+        f_out.write(content)
 
 
 def slugify(value: str) -> str:
