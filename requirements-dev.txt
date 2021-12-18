@@ -8,3 +8,5 @@ pylint-exit>=1.2
 mypy>=0.800
 
 pytest>=6.2
+
+types-requests>=2.26.1
