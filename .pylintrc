@@ -1,4 +1,5 @@
 [MESSAGES CONTROL]
-#disable=
-#  fixme,
-#  invalid-name
+disable=
+  fixme,
+  broad-except,
+  invalid-name
