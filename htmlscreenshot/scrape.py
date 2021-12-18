@@ -9,7 +9,7 @@ from time import sleep
 from selenium import webdriver
 
 from . import lib
-from .lib import ADD_DATETIME_DEFAULT, PDF_DIR
+from .lib import ADD_DATETIME_DEFAULT, PNG_DIR
 
 
 EXT = "png"
@@ -77,14 +77,14 @@ def save_screenshot(name: str, fullpage: bool, add_datetime: bool) -> None:
     :param add_datetime: If True, add datetime to the output name.
     """
     slug_filename = lib.make_filename(name, EXT, add_datetime)
-    out_path = PDF_DIR / slug_filename
+    out_path = PNG_DIR / slug_filename
 
     result_ok = driver.save_screenshot(str(out_path))
 
     if fullpage:
         fullpage_name = f"{name}--{FULL_SUFFIX}"
         slug_filename = lib.make_filename(fullpage_name, EXT, add_datetime)
-        out_path = PDF_DIR / slug_filename
+        out_path = PNG_DIR / slug_filename
 
         body_el = driver.find_element_by_tag_name("body")
         result_ok = body_el.screenshot(str(out_path))
