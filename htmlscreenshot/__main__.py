@@ -47,7 +47,7 @@ def process(path_str: str) -> None:
             if is_binary_data(url):
                 download.download_binary(url)
             else:
-                scrape.process(url, fullpage=True)
+                scrape.process_page(url, fullpage=True)
         except Exception as e:
             error_msg = f"{url} - {str(e)}"
             errors.append(error_msg)

@@ -91,7 +91,7 @@ def save_screenshot(name: str, fullpage: bool, add_datetime: bool) -> None:
         raise ValueError(f"IO error on current page - name: {name}")
 
 
-def process(url: str, fullpage: bool) -> None:
+def process_page(url: str, fullpage: bool) -> None:
     """
     Convert a webpage URL into an image.
     """
@@ -114,7 +114,7 @@ def main(args: list[str]) -> None:
     url = args.pop(0)
 
     try:
-        process(url, fullpage=True)
+        process_page(url, fullpage=True)
     finally:
         driver.quit()
 
