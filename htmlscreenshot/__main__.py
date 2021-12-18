@@ -31,7 +31,7 @@ def handle_errors(errors: list[str]) -> None:
         sys.exit(1)
 
 
-def process(path_str: str) -> None:
+def process_urls(path_str: str) -> None:
     """
     Scrape all URLs for given text file path.
     """
@@ -67,7 +67,7 @@ def main(args: list[str]) -> None:
         sys.exit(0)
 
     path_str = args.pop(0)
-    process(path_str)
+    process_urls(path_str)
 
 
 if __name__ == "__main__":
