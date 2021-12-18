@@ -58,7 +58,8 @@ t typecheck:
 
 
 clean:
-	rm $(APP_DIR)/var/*.png
+	rm $(APP_DIR)/var/pdf/* &> /dev/null || true
+	rm $(APP_DIR)/var/png/* &> /dev/null || true
 
 
 page-help:
