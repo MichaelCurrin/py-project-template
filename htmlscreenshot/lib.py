@@ -31,16 +31,6 @@ def read_text(path_str: str) -> list[str]:
     return urls
 
 
-def write_binary(path: Path, content: bytes) -> None:
-    """
-    Write given binary data to a file.
-
-    e.g. Write a PDF file.
-    """
-    with open(path, "wb") as f_out:
-        f_out.write(content)
-
-
 def slugify(value: str) -> str:
     """
     Convert value to a slug - safe for URLs and filenames.

@@ -5,6 +5,7 @@ Handle fetching and saving of binary data. This uses the traditional `requests`
 package, without any browser.
 """
 import sys
+from pathlib import Path
 
 import requests
 
@@ -29,6 +30,16 @@ def fetch(url: str) -> bytes:
     return resp.content
 
 
+def write_binary(path: Path, content: bytes) -> None:
+    """
+    Write given binary data to a file.
+
+    e.g. Write a PDF file.
+    """
+    with open(path, "wb") as f_out:
+        f_out.write(content)
+
+
 def download_binary(url: str) -> None:
     """
     Fetch and download binary data at URL.
@@ -39,7 +50,7 @@ def download_binary(url: str) -> None:
     slug_filename = lib.make_filename(url, ".pdf", ADD_DATETIME_DEFAULT)
     out_path = PNG_DIR / slug_filename
 
-    lib.write_binary(out_path, content)
+    write_binary(out_path, content)
 
 
 def main(args: list[str]) -> None:
