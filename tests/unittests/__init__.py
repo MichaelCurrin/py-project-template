@@ -1,0 +1,3 @@
+"""
+Unit tests initialization module.
+"""

@@ -4,7 +4,7 @@ APP_DIR = htmlscreenshot
 
 default: install install-dev
 
-all: hooks install install-dev fix typecheck
+all: hooks install install-dev fix typecheck unit
 
 
 h help:
@@ -55,6 +55,9 @@ fix: fmt lint
 
 t typecheck:
 	mypy $(APP_DIR)
+
+unit:
+	pytest
 
 
 clean:
