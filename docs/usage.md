@@ -14,33 +14,6 @@ $ make help
 ```
 
 
-## Format
-
-```sh
-$ make fmt
-```
-
-
-## Lint
-
-```sh
-$ make lint
-```
-
-## Check types
-
-
-```sh
-$ make typecheck
-```
-
-## Test
-
-```sh
-$ make test
-```
-
-
 ## Run
 
 Run application.
@@ -48,6 +21,8 @@ Run application.
 ```sh
 $ make run
 ```
+
+See [Development](development.md) for commands around code quality.
 
 
 ## Run Python commands
