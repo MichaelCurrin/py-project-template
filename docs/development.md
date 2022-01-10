@@ -6,11 +6,25 @@ Ensure you have dev dependencies installed as per [Dev Dependencies](installatio
 ## Format
 
 ```sh
-make fmt
+$ make fmt
 ```
+
 
 ## Lint
 
 ```sh
-make lint
+$ make lint
+```
+
+## Check types
+
+```sh
+$ make typecheck
+```
+
+
+## Test
+
+```sh
+$ make test
 ```
