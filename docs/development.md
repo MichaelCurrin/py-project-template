@@ -2,6 +2,8 @@
 
 Ensure you have dev dependencies installed as per [Dev Dependencies](installation.md#dev-dependencies).
 
+See instructions below for how to run commands around code quality.
+
 
 ## Format
 
@@ -15,6 +17,7 @@ $ make fmt
 ```sh
 $ make lint
 ```
+
 
 ## Check types
 
