@@ -3,7 +3,7 @@
 
 <!-- Shields generated with https://michaelcurrin.github.io/badge-generator/ -->
 
-[![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
+[![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20CI/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/py-project-template/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
