@@ -2,9 +2,14 @@ name: Python application
 
 on:
   push:
+    branches: [master]
     paths-ignore:
-      - "docs/**"
-      - README.md
+      - "*.md"
+
+  pull_request:
+    branches: [master]
+    paths-ignore:
+      - "*.md"
 
 jobs:
   build:
@@ -29,7 +34,7 @@ jobs:
 
       - name: Lint
         run: make lint
-        
+
       - name: Check types
         run: make typecheck
 
