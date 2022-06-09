@@ -1,5 +1,4 @@
 # Python Project Template documentation
->
 > Starter template for a Python app - including CI and docs 🐍 🌠
 
 <!-- TODO: Replace with your project details. -->
@@ -9,3 +8,8 @@
 - [Installation](installation.md)
 - [Usage](usage.md)
 - [Development](development.md)
+
+
+Source code:
+
+[![MichaelCurrin - py-project-template](https://img.shields.io/static/v1?label=MichaelCurrin&message=py-project-template&color=blue&logo=github)](https://github.com/MichaelCurrin/py-project-template "Go to GitHub repo")
