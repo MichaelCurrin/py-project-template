@@ -25,7 +25,7 @@
 
 </div>
 
-See the [Template Notes](/docs/template-notes/) part of the docs for more info.
+See the [Template Notes](/docs/template-notes/) part of the docs for more info on how to use this template. And for links to my other templates.
 
 
 ## Sample usage
