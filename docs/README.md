@@ -8,6 +8,8 @@
 - [Installation](installation.md)
 - [Usage](usage.md)
 - [Development](development.md)
+- [CI pipeline](ci-pipeline.md)
+- [Deploy](deploy.md)
 
 
 Source code:
