@@ -9,7 +9,7 @@ $ source venv/bin/activate
 
 ## View available make commands
 
-```bash
+```sh
 $ make help
 ```
 
