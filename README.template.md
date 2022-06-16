@@ -7,6 +7,8 @@ _TODO: In these badges, replace `MichaelCurrin/py-project-template` with your ow
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/py-project-template/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 
+[![Made with Python](https://img.shields.io/badge/Python->=3.6-blue?logo=python&logoColor=white)](https://python.org "Go to Python website")
+
 
 ## Purpose
 
