@@ -1,3 +1,3 @@
 """
-PY project template module.
+PY Project initialization module.  TODO: rename
 """
