@@ -141,7 +141,7 @@ The _settings_ file helps with running code and adding a gutter at 79 characters
 
 #### Settings
 
-The `python.pythonPath` value for User settings defaults to `"python"`.
+The `python.defaultInterpreterPath` value for User settings defaults to `"python"`.
 
 If you use a virtual environment, use the _venv_ path in the settings file. This must be the full path - it will not pickup correctly inside the _venv_ if left as `"python"`.
 
@@ -155,7 +155,7 @@ If you set config values in a dotenv file, you might want to add this to your se
 
 ```json
 {
-    "python.envFile": "${workspaceFolder}/.env"
+  "python.envFile": "${workspaceFolder}/.env"
 }
 ```
 
@@ -177,7 +177,7 @@ For interest, the file works in VSCode because of this global config setting:
 
 ```json
 {
-    "python.envFile": "${workspaceFolder}/.env"
+  "python.envFile": "${workspaceFolder}/.env"
 }
 ```
 
