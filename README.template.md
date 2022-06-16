@@ -30,24 +30,28 @@ _TODO: Screenshot or command-line snippet._
 
 
 ## Documentation
+> How to install and run this project
 
-_TODO: Either delete this Documentation section and the `docs` folder, or delete the Installation, Usage and Development sections below._
+_TODO: Either keep this Documentation section and the `docs` folder OR keep the Installation, Usage and Development sections below if they are short._
 
-See project [docs](/docs/).
+<div align="center">
+
+[![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](https://michaelcurrin.github.io/py-project-template/)
+
+</div>
 
 
-## Requirements
+## Installation
+
+_TODO: Put your installation instructions here._
+
+### Requirements
 
 _TODO: Update feature list_
 
 - Foo
 - Bar
 - Baz
-
-
-## Installation
-
-_TODO: Put your installation instructions here._
 
 
 ## Usage
