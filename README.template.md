@@ -1,7 +1,7 @@
 # My Project Name
 > Description of my project
 
-_TODO: In these badges, replace `MichaelCurrin/py-project-template` with your own value and if necessary change MIT to your another license type._
+_TODO: In these badges, replace `MichaelCurrin/py-project-template` with your own value and if necessary change MIT to your license type._
 
 [![Actions status](https://github.com/MichaelCurrin/py-project-template/workflows/Python%20application/badge.svg)](https://github.com/MichaelCurrin/py-project-template/actions)
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/py-project-template.svg)](https://GitHub.com/MichaelCurrin/py-project-template/tags/)
@@ -60,6 +60,6 @@ _TODO: Put your developer instructions here._
 
 ## License
 
-_TODO Replace with your own license name_
+_TODO Replace with your own license name and username_
 
-Released under [MIT](/LICENSE).
+Released under [MIT](/LICENSE) by [Username](https://github.com/Username)
