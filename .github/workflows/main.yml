@@ -4,12 +4,14 @@ on:
   push:
     branches: [master]
     paths-ignore:
-      - "*.md"
+      - "docs/**"
+      - README.md
 
   pull_request:
     branches: [master]
     paths-ignore:
-      - "*.md"
+      - "docs/**"
+      - README.md
 
 jobs:
   build:
