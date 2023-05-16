@@ -66,7 +66,7 @@ $ python3 -m venv venv
     $ source venv/bin/activate
     ```
 - Windows
-    ```console
+    ```sh
     > venv\Scripts\activate
     ```
 
