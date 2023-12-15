@@ -2,9 +2,9 @@ black~=22.12
 isort~=5.13
 
 flake8~=4.0
-pylint~=2.12
+pylint~=2.17
 pylint-exit~=1.2
 
-mypy~=0.940
+mypy~=0.991
 
 pytest~=7.4
