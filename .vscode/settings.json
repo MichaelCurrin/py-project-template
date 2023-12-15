@@ -1,16 +1,8 @@
 {
   "_NOTE": "Replace pyproject with your package folder name",
-
-  // "terminal.integrated.cwd": "pyproject",
-  "code-runner.cwd": "pyproject",
+  "terminal.integrated.cwd": "pyproject",
 
   "python.defaultInterpreterPath": "venv/bin/python",
 
   "editor.rulers": [79],
-
-  "python.formatting.provider": "black",
-
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.flake8Enabled": true
 }
