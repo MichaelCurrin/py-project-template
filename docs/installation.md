@@ -50,6 +50,12 @@ $ sudo apt update
 $ sudo apt install python3
 ```
 
+### Windows
+
+Go to the [Downloads](https://www.python.org/downloads/) page on the official Python website.
+
+Download and run the installer.
+
 
 ## Install project dependencies
 
