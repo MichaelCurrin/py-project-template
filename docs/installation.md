@@ -29,32 +29,22 @@ $ make hooks
 
 ## Install system dependencies
 
-_TODO: Include any instructions or commands to install a package or application, other than Python. Example below._
+_TODO: Include any instructions or commands to install a package or application, other than Python. Example below using external reference and explicit instructions._
 
-### macOS
-
-Install [brew](https://brew.sh/).
-
-Install Python with `brew`.
-
-```sh
-$ brew install python3
-```
+Install Python on your machine - see this gist on [How to install Python 3](https://gist.github.com/MichaelCurrin/57caae30bd7b0991098e9804a9494c23).
 
 ### Ubuntu/Debian
 
-Install packages with `apt` if you have it, otherwise `apt-get` can be used instead.
+_To be completed by you._
 
-```sh
-$ sudo apt update
-$ sudo apt install python3
-```
+### macOS
+
+_To be completed by you._
+
 
 ### Windows
 
-Go to the [Downloads](https://www.python.org/downloads/) page on the official Python website.
-
-Download and run the installer.
+_To be completed by you._
 
 
 ## Install project dependencies
