@@ -5,7 +5,7 @@ _You can delete this template-notes directory in your copy of this project._
 The structure of this project is based on:
 
 - Conventions in the Python community.
-- What I have picked up from other developers I have worked with. 
+- What I have picked up from other developers I have worked with.
 - Some of my own preferences which I've evolved over time.
 
 This repo is a good starting point for new projects, plus I can use it as a reference for existing projects where I want a base structure reminder, or I need to copy a text fragment which is very reusable with a bit of tweaking.
@@ -39,7 +39,7 @@ For a Node quickstart template, see [MichaelCurrin/node-project-template](https:
     - [Examples](#examples)
     - [Placement](#placement)
 - [Repo admin](#repo-admin)
-    - [Git ignore](#git-ignore)
+    - [Git ignore](#git-ignore-1)
     - [Change formatter](#change-formatter)
 
 
@@ -216,10 +216,9 @@ Benefits I found of this approach:
     * It's easier to avoid circular imports and complicated imports (e.g. where a script uses a script uses script in a deep or haphazard structure).
 
 
-## Git Ignore
+## Git Ignore additions
 
 Optional additions for the [.gitignore](/.gitignore) file.
-
 
 ### Data files
 
@@ -240,6 +239,7 @@ Or ignore CSV files in specific paths such as project variable files directory. 
 pyproject/var/*.csv
 pyproject/var/.~lock.*.csv#
 ```
+
 
 ## Badges
 
@@ -292,6 +292,16 @@ To lay them out them vertically, put them one line under each other. No blank li
 
 
 ## Repo admin
+
+### Dotenv file
+
+If you create a `.env`, it can be useful to set your current project and the virtualenvironment both in the value.
+
+```sh
+PYTHONPATH=pyproject:venv
+```
+
+This used to be needed for VS Code to work properly and for Pylint (with `source .env` first), but in both cases this was not necessary and has been removed from this template. If you want, you can add it back as above.
 
 ### Git ignore
 

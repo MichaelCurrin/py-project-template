@@ -23,7 +23,7 @@ install:
 
 install-dev:
 	pip install -r requirements-dev.txt
-	
+
 upgrade:
 	pip install pip --upgrade
 	pip install -r requirements.txt --upgrade
@@ -39,8 +39,7 @@ fmt-check:
 	isort . --diff --check-only
 
 pylint:
-	source .env \
-		&& pylint $(APP_DIR) \
+	pylint $(APP_DIR) \
 		|| pylint-exit $$?
 
 flake8:
