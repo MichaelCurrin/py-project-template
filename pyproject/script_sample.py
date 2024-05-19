@@ -11,6 +11,7 @@ It contains the following, layed out according to PEP-8 naming and spacing:
 - call to main function, using command-line arguments and ignoring the path to the
     file itself at index 0.
 """
+
 # pylint: disable=blacklisted-name,invalid-name
 import sys
 

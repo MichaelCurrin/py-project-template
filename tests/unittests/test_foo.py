@@ -1,6 +1,7 @@
 """
 Test foo module.
 """
+
 from pyproject.foo import greet
 
 

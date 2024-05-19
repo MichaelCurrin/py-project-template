@@ -1,6 +1,7 @@
 """
 Main application file.
 """
+
 import sys
 
 from . import foo
