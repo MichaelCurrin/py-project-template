@@ -57,11 +57,8 @@ t typecheck:
 	mypy $(APP_DIR) tests
 
 
-unit:
+test:
 	pytest
-
-# TODO: Add integration tests here.
-test: unit
 
 run:
 	cd $(APP_DIR) && python ./pyproject.py World
