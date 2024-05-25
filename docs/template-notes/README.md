@@ -32,15 +32,17 @@ For a Node quickstart template, see [MichaelCurrin/node-project-template](https:
         - [Launch](#launch)
         - [Dotenv](#dotenv)
 - [Naming conventions](#naming-conventions)
-- [Git Ignore](#git-ignore)
+- [Git Ignore additions](#git-ignore-additions)
     - [Data files](#data-files)
 - [Badges](#badges)
     - [Rules for static text badges](#rules-for-static-text-badges)
     - [Examples](#examples)
     - [Placement](#placement)
 - [Repo admin](#repo-admin)
-    - [Git ignore](#git-ignore-1)
+    - [Dotenv file](#dotenv-file)
+    - [Git ignore](#git-ignore)
     - [Change formatter](#change-formatter)
+    - [Add integration tests](#add-integration-tests)
 
 
 ## Add VS Code boilerplate
@@ -343,3 +345,19 @@ Instead of using _Black_ for formatting, you can configure the project to use [A
         ```
 5. Update [settings.json](/.vscode/settings.json).
     - Change `python.formatting.provider` from `"black"` to `"autopep8"`.
+
+### Add integration tests
+
+Create integration tests here `tests/integrationtests/`.
+
+Then update `Makefile` to handle your integration tests:
+
+```make
+unit:
+    pytest tests/unittests/
+
+integration:
+    pytest tests/integrationtests/
+
+test: unit integration
+```
