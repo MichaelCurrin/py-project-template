@@ -1,6 +1,6 @@
 # Installation
 
-_TODO: Delete any sections not needed._
+_TODO: Remove any unnecessary sections._
 
 
 ## Project requirements

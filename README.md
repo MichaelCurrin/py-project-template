@@ -18,7 +18,7 @@
 
 ## Purpose
 
-This project aims to provide a template for a Python project so you can get up and running fast and then quickly get your app deployed to the cloud with confidence when you're ready.
+This project provides a template for a Python application, enabling you to get up and running fast with local development and then move quickly when you want deploy your app to the cloud with confidence.
 
 It includes a solid setup, from installing packages to running code quality checks locally and with GitHub Actions.
 

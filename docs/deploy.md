@@ -1,3 +1,3 @@
 # Deploy
 
-_TODO: Complete with your steps to publish our package to PyPI or how to deploy your app to remote environments._
+_TODO: Complete this section with your steps to publish the package to PyPI or deploy your app to remote environments._
