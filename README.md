@@ -16,8 +16,27 @@
 [![dev dependency - mypy](https://img.shields.io/badge/dev_dependency-mypy-blue)](https://pypi.org/project/mypy)
 [![dev dependency - pytest](https://img.shields.io/badge/dev_dependency-pytest-blue)](https://pypi.org/project/pytest)
 
+## Purpose
+
+This project aims to provide a template for a Python project so you can get up and running fast and then quickly get your app deployed to the cloud with confidence when you're ready.
+
+It includes a solid setup, from installing packages to running code quality checks locally and with GitHub Actions.
+
+What you get:
+
+- [x] Generic Python app code in [pyproject](/pyproject/), with sample tests in [tests](/tests/).
+- [x] Sample documentation.
+- [x] [Makefile](/Makefile) for running `make` commands (for macOS and Linux).
+- [x] Requirements files for prod packages and dev packages, installed with `pip` using `make` commands.
+- [x] Code quality checks - `flake8`, `pylint`, `mypy` (type checking), and `pytest`, including `make` commands and configs for each.
+- [x] Git push hooks, to run checks on pushing.
+- [x] GitHub Actions pipeline config.
+- [x] Configs - VS Code, EditorConfig, and a Git ignore file.
+
 
 ## How to use this starter project
+
+Create your own repo from this one:
 
 <div align="center">
 
