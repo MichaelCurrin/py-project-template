@@ -114,14 +114,16 @@ $ cd myprojectname
 #### Setup main script
 
 ```sh
+$ cd myprojectname
 $ git rm pyproject.py
 $ touch myprojectname.py
 ```
 
-Go through the _TODO_ items in the repo and complete them. See the rest is README if you don't know what a file is for.
+Go through the _TODO_ items in the repo and complete them. Use find and replace in your IDE for:
 
-<!--_FIXME: Is there is a way to use find, grep etc. to replace mentions across all files without going detailed? And on directory name. Also note renaming local repo folder._-->
-
+- `pyproject` -> `myapp`
+- `MichaelCurrin/py-project-template` -> `Username/my-app`
+- `PY Project` -> `My App`
 
 ### Clean-up
 
@@ -140,19 +142,35 @@ See the [.vscode](/.vscode/) directory.
 
 The _settings_ file helps with running code and adding a gutter at 79 characters. The _launch_ file can be used with the debug panel to run a Python script which is open in the IDE.
 
-#### Settings
+#### Settings for terminal
 
-The `python.defaultInterpreterPath` value for User settings defaults to `"python"`.
+Optionally set this field in `settings.json`, if you want a new terminal tab to start here. This great for Python CLI usage of your app. but not if you want to use the Makefile in the repo root.
 
-If you use a virtual environment, use the _venv_ path in the settings file. This must be the full path - it will not pickup correctly inside the _venv_ if left as `"python"`.
+```json
+{
+  "terminal.integrated.cwd": "pyproject"
+}
+```
 
-If you don't use a virtual environment, the User default could be fine. You could override it in the User or Workspace level to one of the following:
+#### Setting for Python environment
+
+##### Virtual environment
+
+The `python.defaultInterpreterPath` value has already been set to use the virtual environment path. Adjust this if you use `.venv` instead of `venv`.
+
+##### No virtual environment
+
+If you don't use a virtual environment for this project, set one of these for `python.defaultInterpreterPath`.
 
 - `python3`
 - `/usr/bin/python3`
-- `/usr/bin/python3.X` - e.g. `3.6`. If you use the VSCode GUI to select the environment it might look like this.
+- `/usr/bin/python3.12` or similar.
 
-If you set config values in a dotenv file, you might want to add this to your settings file:
+#### Dotenv
+
+This template comes with a _dotenv_ file - [.env](/.env) which includes paths to import from, including the project directory and the virtual environment. Having that there helps with running or linting files in an IDE such as VSCode.
+
+For interest, the file works in VSCode because of this global config setting:
 
 ```json
 {
@@ -170,17 +188,6 @@ The config already contains an item to run a Python script in the terminal, if i
 
 If you find yourself regularly running particular Python scripts or modules and want to do so without having to first open the script, then add an item for that specific script.
 
-#### Dotenv
-
-This template comes with a _dotenv_ file - [.env](/.env) which includes paths to import from, including the project directory and the virtual environment. Having that there helps with running or linting files in an IDE such as VSCode.
-
-For interest, the file works in VSCode because of this global config setting:
-
-```json
-{
-  "python.envFile": "${workspaceFolder}/.env"
-}
-```
 
 ## Naming conventions
 
