@@ -199,10 +199,10 @@ That naming style has been adopted for naming of directories within this project
 
 Recommendations for using the project's directories (paths given relative to repo root):
 
-Directory 			          | Description
----       			          | ---
-**[bin/](/bin/)** 		          | Executable files. Usually a bash script, such as to run a python script within an environment, run a curl command or pipe data in or out of sqlite.
-**[pyproject/](/pyproject/)**   	  | Main application scripts such as a server or command-line scripts should live in the top project directory, in this case named `pyproject`. These should preferably not import from each other but can import from the `lib` module.
+Directory 			                      | Description
+---       			                      | ---
+**[bin/](/bin/)** 		                  | Executable files. Usually a bash script, such as to run a python script within an environment, run a curl command or pipe data in or out of sqlite.
+**[pyproject/](/pyproject/)**   	      | Main application scripts such as a server or command-line scripts should live in the top project directory, in this case named `pyproject`. These should preferably not import from each other but can import from the `lib` module.
 **[pyproject/lib/](/pyproject/lib/)**     | Library of common scripts. These should be independent of each other (i.e. do not import from each other), to reduce circular dependencies. They should also not depend on an `__init__.py` script. Any common logic such as setting up a path to the app directory should be setup in the `__init__.py` script.
 **[pyproject/etc/](/pyproject/etc/)**     | Configuration files. For files such as `.json`, `.yml`, `.ini` or `.conf`.
 **[pyproject/utils/](/pyproject/utils/)** | Utilities. Standalone scripts which may use the `lib` module. These `utils` scripts should also be independent from each other should. If you find when developing that there is any logic duplicated across `utils` scripts, then that should be moved to a `lib` script and imported from `lib` into `utils` scripts.
@@ -324,14 +324,14 @@ Note that you do **not** need to add these to your [.gitignore](/.gitignore) fil
 
 Instead of using _Black_ for formatting, you can configure the project to use [AutoPEP8](https://pypi.org/project/autopep8/).
 
-1. Update [requirements-dev.txt](/requirements-dev.txt).
+1. Update [requirements-dev.txt](/requirements-dev.txt) with the following changes:
     - Remove `black`.
     - Add `autopep8`.
 2. Uninstall Black.
     ```sh
     $ pip uninstall black
     ```
-3. Install.
+3. Install dev packages:
     ```sh
     $ make install-dev
     ```
@@ -339,25 +339,25 @@ Instead of using _Black_ for formatting, you can configure the project to use [A
     - Remove/update the format commands to use `autopep8`. e.g.
         ```make
         fmt:
-            autopep8 --in-place --recursive pyproject/
+        	autopep8 --in-place --recursive pyproject/
         fmt-check:
-            autopep8 --diff --recursive pyproject/
+        	autopep8 --diff --recursive pyproject/
         ```
-5. Update [settings.json](/.vscode/settings.json).
-    - Change `python.formatting.provider` from `"black"` to `"autopep8"`.
 
 ### Add integration tests
 
 Create integration tests here `tests/integrationtests/`.
 
-Then update `Makefile` to handle your integration tests:
+Then update `Makefile` to handle your unit and integration tests.
+
+e.g.
 
 ```make
 unit:
-    pytest tests/unittests/
+	pytest tests/unittests/
 
 integration:
-    pytest tests/integrationtests/
+	pytest tests/integrationtests/
 
 test: unit integration
 ```
