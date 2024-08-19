@@ -1,9 +1,4 @@
 {
-  // TODO: Replace with your project app directory.
-  // Uncomment this line if you want the terminal to start here, which is
-  // great for Python but not if you want to use the Makefile in the repo root.
-  // "terminal.integrated.cwd": "pyproject",
-
   "python.defaultInterpreterPath": "venv/bin/python",
 
   "editor.rulers": [79],
