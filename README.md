@@ -40,7 +40,7 @@ Create your own repo from this one:
 
 <div align="center">
 
-[![Use this template](https://img.shields.io/badge/Genereate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)](https://github.com/MichaelCurrin/py-project-template/generate)
 
 </div>
 
