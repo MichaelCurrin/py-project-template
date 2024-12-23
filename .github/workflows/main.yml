@@ -23,15 +23,13 @@ jobs:
       - name: Set up Python 3
         uses: actions/setup-python@v2
         with:
-          # TODO: Set back to `3.X`. For now it is locked
-          # because pylint and flake8 have been failing on `3.12`.
-          python-version: '3.10'
+          # Avoiding using "3.X" unless running a matrix of "3.X" and a
+          # specific version, because pylint and flake8 have been failing on
+          # "3.12" for example when 3.10 was fine.
+          python-version: "3.10"
 
       - name: Install dependencies
         run: make install
-
-      - name: Install dev dependencies
-        run: make install-dev
 
       - name: Check formatting
         run: make fmt-check
