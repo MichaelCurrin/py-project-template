@@ -27,7 +27,9 @@ What you get:
 - [x] Generic Python app code in [pyproject](/pyproject/), with sample tests in [tests](/tests/).
 - [x] Sample documentation.
 - [x] [Makefile](/Makefile) for running `make` commands (for macOS and Linux).
-- [x] Requirements files for prod packages and dev packages, installed with `pip` using `make` commands.
+- [x] Boiletplate for package management.
+    - [x] Requirements files for prod packages and dev packages managed with `pip` and option to use `make` commands with `pip`.
+    - [x] Config files for installing prod and dev packages with `poetry`.
 - [x] Code quality checks - `flake8`, `pylint`, `mypy` (type checking), and `pytest`, including `make` commands and configs for each.
 - [x] Git push hooks, to run checks on pushing.
 - [x] GitHub Actions pipeline config.

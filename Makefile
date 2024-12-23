@@ -1,11 +1,10 @@
 SHELL = /bin/bash
 APP_DIR = pyproject  # TODO: Replace with the name of your app directory.
 
-export PYTHONPATH
 
-default: install install-dev
+default: install
 
-all: hooks install install-dev fmt-check lint typecheck test
+all: hooks install fmt-check lint typecheck test
 
 
 h help:
@@ -20,8 +19,6 @@ hooks:
 install:
 	pip install pip --upgrade
 	pip install -r requirements.txt
-
-install-dev:
 	pip install -r requirements-dev.txt
 
 upgrade:
