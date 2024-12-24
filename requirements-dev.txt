@@ -8,3 +8,6 @@ pylint-exit~=1.2
 mypy~=0.991
 
 pytest~=7.4
+
+# Alternative to black, isort, flake8.
+ruff

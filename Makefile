@@ -49,6 +49,13 @@ lint: pylint flake8
 
 fix: fmt lint
 
+# Delete the above and use this instead if Ruff is preferred.
+fmt-r:
+	ruff check
+
+fix-r:
+	ruff check --fix
+
 
 t typecheck:
 	mypy $(APP_DIR) tests
