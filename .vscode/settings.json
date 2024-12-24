@@ -1,5 +1,5 @@
 {
-  "python.defaultInterpreterPath": "venv/bin/python",
+  "python.defaultInterpreterPath": ".venv/bin/python",
   "editor.rulers": [79],
   "python.testing.pytestArgs": [
     "tests"
