@@ -2,7 +2,7 @@
 # Remove this line if you want to distribute your project as an installable package.
 package-mode = false
 name = "py-project-template"
-version = "1.7.1"
+version = "X.X.X"
 description = "Starter template for a Python app - including CI and docs"
 authors = ["Michael Currin <18750745+MichaelCurrin@users.noreply.github.com>"]
 license = "MIT"
