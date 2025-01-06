@@ -206,10 +206,10 @@ That naming style has been adopted for naming of directories within this project
 
 Recommendations for using the project's directories (paths given relative to repo root):
 
-Directory 			                      | Description
----       			                      | ---
-**[bin/](/bin/)** 		                  | Executable files. Usually a bash script, such as to run a python script within an environment, run a curl command or pipe data in or out of sqlite.
-**[pyproject/](/pyproject/)**   	      | Main application scripts such as a server or command-line scripts should live in the top project directory, in this case named `pyproject`. These should preferably not import from each other but can import from the `lib` module.
+Directory                                 | Description
+------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**[bin/](/bin/)**                         | Executable files. Usually a bash script, such as to run a python script within an environment, run a curl command or pipe data in or out of sqlite.
+**[pyproject/](/pyproject/)**             | Main application scripts such as a server or command-line scripts should live in the top project directory, in this case named `pyproject`. These should preferably not import from each other but can import from the `lib` module.
 **[pyproject/lib/](/pyproject/lib/)**     | Library of common scripts. These should be independent of each other (i.e. do not import from each other), to reduce circular dependencies. They should also not depend on an `__init__.py` script. Any common logic such as setting up a path to the app directory should be setup in the `__init__.py` script.
 **[pyproject/etc/](/pyproject/etc/)**     | Configuration files. For files such as `.json`, `.yml`, `.ini` or `.conf`.
 **[pyproject/utils/](/pyproject/utils/)** | Utilities. Standalone scripts which may use the `lib` module. These `utils` scripts should also be independent from each other should. If you find when developing that there is any logic duplicated across `utils` scripts, then that should be moved to a `lib` script and imported from `lib` into `utils` scripts.
