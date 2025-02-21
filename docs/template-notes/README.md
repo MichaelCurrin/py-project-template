@@ -166,18 +166,6 @@ If you don't use a virtual environment for this project, set one of these for `p
 - `/usr/bin/python3`
 - `/usr/bin/python3.12` or similar.
 
-#### Dotenv
-
-This template comes with a _dotenv_ file - [.env](/.env) which includes paths to import from, including the project directory and the virtual environment. Having that there helps with running or linting files in an IDE such as VSCode.
-
-For interest, the file works in VSCode because of this global config setting:
-
-```json
-{
-  "python.envFile": "${workspaceFolder}/.env"
-}
-```
-
 #### Launch
 
 The [launch.json](/.vscode/launch.json) file contains configurations for scripts or commands which can be run from the Debug panel, using the droplist and play button.
@@ -304,13 +292,15 @@ To lay them out them vertically, put them one line under each other. No blank li
 
 ### Dotenv file
 
-If you create a `.env`, it can be useful to set your current project and the virtualenvironment both in the value.
+Recommended settings for `.env` file for version control (if you use settings that are local specific or sensitive, don't add it to version control).
 
 ```sh
 PYTHONPATH=pyproject:venv
 ```
 
-This used to be needed for VS Code to work properly and for Pylint (with `source .env` first), but in both cases this was not necessary and has been removed from this template. If you want, you can add it back as above.
+This setting helps Pylint pick up imports currently within your test files. This is used in the test runner in VS Code for Pylint and also for Pylint in the command-line (if you run `source .env` first).
+
+This is not needed for this template project anymore so the file has been removed, but you can add it if you run into issues.
 
 ### Git ignore
 
