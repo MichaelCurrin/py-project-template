@@ -298,9 +298,7 @@ Recommended settings for `.env` file for version control (if you use settings th
 PYTHONPATH=pyproject:venv
 ```
 
-This setting helps Pylint pick up imports currently within your test files. This is used in the test runner in VS Code for Pylint and also for Pylint in the command-line (if you run `source .env` first).
-
-This is not needed for this template project anymore so the file has been removed, but you can add it if you run into issues.
+If you have non-standard setup, this can help with running Pytest in the CLI (if you run `source .env` first). But for using the test runner in VS Code, it doesn't work and you should add the tests with the dialog in VS Code and it will the custom path to your project settings file (`.vscode/settings.json)`.
 
 ### Git ignore
 
