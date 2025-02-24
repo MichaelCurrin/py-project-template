@@ -39,7 +39,6 @@ For a Node quickstart template, see [MichaelCurrin/node-project-template](https:
     - [Examples](#examples)
     - [Placement](#placement)
 - [Repo admin](#repo-admin)
-    - [Dotenv file](#dotenv-file)
     - [Git ignore](#git-ignore)
     - [Change formatter](#change-formatter)
     - [Add integration tests](#add-integration-tests)
@@ -290,15 +289,7 @@ To lay them out them vertically, put them one line under each other. No blank li
 
 ## Repo admin
 
-### Dotenv file
-
-Recommended settings for `.env` file for version control (if you use settings that are local specific or sensitive, don't add it to version control).
-
-```sh
-PYTHONPATH=pyproject:venv
-```
-
-If you have non-standard setup, this can help with running Pytest in the CLI (if you run `source .env` first). But for using the test runner in VS Code, it doesn't work and you should add the tests with the dialog in VS Code and it will the custom path to your project settings file (`.vscode/settings.json)`.
+For testing - see [Python testing](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/other/vscode/python-testing.html) for setting up settings file and dotenv file.
 
 ### Git ignore
 
