@@ -52,7 +52,7 @@ It is usually best-practice in _Python_ projects to install into a sandboxed _vi
 
 _TODO Update your template to use either `pip` or `poetry` only and removed unnecessary configs._
 
-### Install with Pip
+### Install with Pip (using requirements.txt and not Poetry)
 
 Create and activate a virtual environment:
 
@@ -77,11 +77,27 @@ Install Python packages into the project's virtual environment:
 $ make install
 ```
 
+### Install with pip
+
+Install with pip:
+
+```sh
+$ pip install git+https://github.com/MichaelCurrin/py-project-template
+```
+
+Or with [pipx](https://pipx.pypa.io/stable/) for managing in an isolated environment.
+
+```sh
+$ pip install pipx
+$ pipx install git+https://github.com/MichaelCurrin/py-project-template
+```
+
+
 ### Install with Poetry
 
 Required - install Poetry on your system globally. See [Gist](https://gist.github.com/MichaelCurrin/8d6c377cc46ce2ef6f94e52b4a21787d).
 
-Then Python packages into a virtual environment managed by Poetry:
+Then install Python packages into a virtual environment managed by Poetry:
 
 ```sh
 $ poetry install
