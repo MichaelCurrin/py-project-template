@@ -50,11 +50,15 @@ lint: pylint flake8
 fix: fmt lint
 
 # Delete the above and use this instead if Ruff is preferred.
-fmt-r:
+lint-ruff:
 	ruff check
 
-fix-r:
+fmt-check-ruff:
+	ruff format --check
+
+fix-ruff:
 	ruff check --fix
+	ruff format
 
 
 t typecheck:
