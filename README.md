@@ -16,6 +16,7 @@
 [![dev dependency - mypy](https://img.shields.io/badge/dev_dependency-mypy-blue)](https://pypi.org/project/mypy)
 [![dev dependency - pytest](https://img.shields.io/badge/dev_dependency-pytest-blue)](https://pypi.org/project/pytest)
 
+
 ## Purpose
 
 This project provides a template for a Python application, enabling you to get up and running fast with local development and then move quickly when you want deploy your app to the cloud with confidence.
@@ -34,6 +35,10 @@ What you get:
 - [x] Git push hooks, to run checks on pushing.
 - [x] GitHub Actions pipeline config.
 - [x] Configs - VS Code, EditorConfig, and a Git ignore file.
+
+## Related projects
+
+See also [py-project-basic](https://github.com/MichaelCurrin/py-project-basic) as a related project which is simpler which is especially good for small or experimental projects.
 
 
 ## How to use this starter project
