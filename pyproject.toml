@@ -1,17 +1,14 @@
-[tool.poetry]
-# Remove this line if you want to distribute your project as an installable package.
-package-mode = false
+[project]
 name = "py-project-template"
-version = "X.X.X"
+version = "1.8.0"
 description = "Starter template for a Python app - including CI and docs"
-authors = ["Michael Currin <18750745+MichaelCurrin@users.noreply.github.com>"]
-license = "MIT"
+authors = [
+  { name = "Michael Currin", email = "18750745+MichaelCurrin@users.noreply.github.com" },
+]
+license = { text = "MIT" }
 readme = "README.md"
-
-
-[tool.poetry.dependencies]
-python = "^3.12"
-
+requires-python = ">=3.12"
+dependencies = []
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
@@ -23,6 +20,11 @@ mypy = "^1.14.0"
 pytest = "^8.3.4"
 ruff = "^0.8.4"
 
+[tool.poetry]
+# Remove this line if you want to distribute your project as an installable package.
+package-mode = false
+
+
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
